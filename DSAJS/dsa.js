@@ -31,12 +31,18 @@ const large = new Array(1000).fill("nemo")
 //O(1) constant time
 //O(n) linear time
 
-boxes =[0,1,2,3,4,5,6]
+// boxes =[0,1,2,3,4,5,6]
 
-function logFirstTwoBoxes(boxes) {
-    console.log(boxes[0]);
-    console.log(boxes[1]);
+// function logFirstTwoBoxes(boxes) {
+    // console.log(boxes[0]); //O(1)
+    // console.log(boxes[1]); //O(1) Constant time 
 
-}
+// }
 
-logFirstTwoBoxes(boxes);
+// logFirstTwoBoxes(boxes);
+
+
+//Rule 1:worst case
+//Rule 2: remove constatns
+//Rule 3: differents terms for input
+//Rule 4:
