@@ -44,3 +44,21 @@
 // <h2>${radius}</h2>
 // <p>${pi}</p>
 // `;
+
+// let ninjas = ["shaun",'ryu','chun-li'];
+
+// ninjas[1]='ken';
+
+// console.log(ninjas[1]);
+// console.log(ninjas.length);
+// let result = ninjas.join(" ")
+// console.log(result);
+// console.log(ninjas.indexOf("ryu"));
+//also concat
+console.log(ninjas.push("ken"));
+console.log(ninjas);
+// let ages = ["shaun",'ryu','chun-li'];
+
+// ninjas[1]='ken';
+
+// console.log(ninja[1]);
