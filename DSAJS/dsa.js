@@ -2,17 +2,36 @@ const nemo=["nemo"];
 const large = new Array(1000).fill("nemo")
 
 
+// function findNemo(array) {
+//     let t0= performance.now();
+//     for (let i = 0; i < array.length; i++) {
+//         if(array[i]=== "nemo") {
+//             console.log("found Nemo!");
+//         }       
+//     }
+//     let t1= performance.now();
+//     console.log("Call to find took " + (t1-t0)+ "milliseconds");
+
+// }
+
+// findNemo(large);
+
 function findNemo(array) {
-    let t0= performance.now();
-    for (let i = 0; i < array.length; i++) {
-        if(array[i]=== "nemo") {
-            console.log("found Nemo!");
-        }       
+        for (let i = 0; i < array.length; i++) {
+            if(array[i]=== "nemo") {
+                console.log("found Nemo!");
+            }       
+        }
+   
+    
     }
-    let t1= performance.now();
-    console.log("Call to find took " + (t1-t0)+ "milliseconds");
+    
+    findNemo(large);
 
+//O(1) constant time
+//O(n) linear time
+
+function logFirstTwoBoxes(params) {
+    
 }
-
-findNemo(large);
-
+    
