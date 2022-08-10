@@ -1,6 +1,7 @@
 const nemo=["nemo"];
 const large = new Array(1000).fill("nemo")
-
+const everyone =["dory","bruce","marlin",'nemo','gill','bloat','nigle',
+'squirt','darla','hank'];
 
 // function findNemo(array) {
 //     let t0= performance.now();
@@ -14,7 +15,18 @@ const large = new Array(1000).fill("nemo")
 
 // }
 
-// findNemo(large);
+function findNemo(array) {
+    for (let i = 0; i < array.length; i++) {
+        console.log("running...");
+        if(array[i]=== "nemo") {
+            console.log("found Nemo!");
+        }       
+    }
+    console.log("Call to find took " + (t1-t0)+ "milliseconds");
+
+}
+
+findNemo(everyone);
 
 // function findNemo(array) {
 //         for (let i = 0; i < array.length; i++) {
