@@ -24,3 +24,23 @@
 
 // let result = email.replace('g','O');
 // console.log(result);
+
+
+// let radius = 10;
+// const pi = 3.14;
+
+// let result = pi * radius**2;
+// console.log(result);
+
+//order of operation - B I D M A S  where the I refers to indices like **
+
+// radius +=10;
+// console.log("10" / 2);
+
+// console.log(`This is anothery way of writing text by using template literals ${result}`);
+
+//creating html templates
+// let html= `
+// <h2>${radius}</h2>
+// <p>${pi}</p>
+// `;
