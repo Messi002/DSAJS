@@ -55,10 +55,14 @@
 // console.log(result);
 // console.log(ninjas.indexOf("ryu"));
 //also concat
-console.log(ninjas.push("ken"));
-console.log(ninjas);
+// console.log(ninjas.push("ken"));
+// console.log(ninjas);
 // let ages = ["shaun",'ryu','chun-li'];
 
 // ninjas[1]='ken';
 
 // console.log(ninja[1]);
+
+let email = 'lareth@gmail.com'
+let result = email.includes("@");
+console.log(result);
