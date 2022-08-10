@@ -16,22 +16,27 @@ const large = new Array(1000).fill("nemo")
 
 // findNemo(large);
 
-function findNemo(array) {
-        for (let i = 0; i < array.length; i++) {
-            if(array[i]=== "nemo") {
-                console.log("found Nemo!");
-            }       
-        }
+// function findNemo(array) {
+//         for (let i = 0; i < array.length; i++) {
+//             if(array[i]=== "nemo") {
+//                 console.log("found Nemo!");
+//             }       
+//         }
    
     
-    }
+//     }
     
-    findNemo(large);
+//     findNemo(large);
 
 //O(1) constant time
 //O(n) linear time
 
-function logFirstTwoBoxes(params) {
-    
+boxes =[0,1,2,3,4,5,6]
+
+function logFirstTwoBoxes(boxes) {
+    console.log(boxes[0]);
+    console.log(boxes[1]);
+
 }
-    
+
+logFirstTwoBoxes(boxes);
