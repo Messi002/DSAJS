@@ -77,3 +77,26 @@
 
 
 //developer.mozilla.org/javascript
+
+//Data structures are ways of storing data and algorithms are functions or ways to use DS to write 
+//our prograrm
+
+// function booo(n) {
+//     for (let i = 0; i < n.length; i++) {
+// console.log("booo!");        
+//     }
+    
+// }
+
+function arrayofHi(n) {
+    let hiArray = [];
+    for (let i = 0; i < n; i++) {
+        hiArray[i] = 'hi'        
+    }
+return hiArray;
+}
+
+console.log(arrayofHi(9));
+
+
+
