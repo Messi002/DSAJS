@@ -1,7 +1,7 @@
 // const nemo=["nemo"];
 // const large = new Array(1000).fill("nemo")
-// const everyone =["dory","bruce","marlin",'nemo','gill','bloat','nigle',
-// 'squirt','darla','hank'];
+const everyone =["dory","bruce","marlin",'nemo','gill','bloat','nigle',
+'squirt','darla','hank'];
 
 // function findNemo(array) {
 //     let t0= performance.now();
@@ -88,15 +88,37 @@
     
 // }
 
-function arrayofHi(n) {
-    let hiArray = [];
-    for (let i = 0; i < n; i++) {
-        hiArray[i] = 'hi'        
-    }
-return hiArray;
-}
+// function arrayofHi(n) {
+//     let hiArray = [];
+//     for (let i = 0; i < n; i++) {
+//         hiArray[i] = 'hi'        
+//     }
+// return hiArray;
+// }
 
-console.log(arrayofHi(9));
+// console.log(arrayofHi(9));
 
 
+//forEach doesn't uses index of the array but a variable 
+// const findNemo2 = array => {
+//    let t0= performance.now()
+//     array.forEach(fish =>{
+//         if(fish == "nemo"){
+//             console.log("found Nemo");
+//         }
+//     })
+//     let t1= performance.now();
+//  console.log(`It took ${t1-t0}`);
+// }
 
+// findNemo2(everyone);
+
+//Similar to forIn in dart 
+// const findNemo3 = array => {
+//     for(let fish of array){
+//         if(fish == "nemo"){
+//             console.log("found Nemo");
+//         }
+//     }
+// }
+// findNemo3(everyone);
