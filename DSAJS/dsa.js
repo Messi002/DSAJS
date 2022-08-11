@@ -63,7 +63,7 @@
 // O(log N) logarithmic usually searching alogrithms have log(n) if they are sorted (binary search) (not on hash maps though)
 // O(n) Linear = for loops while loops
 // O(n*log(n)) log linear = sorting operations usually
-// O(n^2) Quadratic- every element in a collection needs to be compared to ever other element. Two nestted loops
+// O(n^2) Quadratic- every element in a collection needs to be compared to every other element. Two nested loops
 // O(2^n) Exponential- recursive algorithms that solve a problem of size 
 // O(n!)- you are adding a loop for every element.
 
