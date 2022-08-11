@@ -69,10 +69,8 @@
 // console.log(result);
 
 // console.log(25 !== "25");
-
-let score = '100'
-score = Number(score);
+ 
 // String() converting to a string
 // Boolean 0, empty string are considered as a falsey value. 
-console.log(score + 1);
-console.log(typeof score);
+// console.log(score + 1);
+// console.log(typeof score);

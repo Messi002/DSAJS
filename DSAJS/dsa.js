@@ -1,7 +1,7 @@
-const nemo=["nemo"];
-const large = new Array(1000).fill("nemo")
-const everyone =["dory","bruce","marlin",'nemo','gill','bloat','nigle',
-'squirt','darla','hank'];
+// const nemo=["nemo"];
+// const large = new Array(1000).fill("nemo")
+// const everyone =["dory","bruce","marlin",'nemo','gill','bloat','nigle',
+// 'squirt','darla','hank'];
 
 // function findNemo(array) {
 //     let t0= performance.now();
@@ -15,16 +15,16 @@ const everyone =["dory","bruce","marlin",'nemo','gill','bloat','nigle',
 
 // }
 
-function findNemo(array) {
-    for (let i = 0; i < array.length; i++) {
-        console.log("running...");
-        if(array[i]=== "nemo") {
-            console.log("found Nemo!");
-        }       
-    }
-}
+// function findNemo(array) {
+//     for (let i = 0; i < array.length; i++) {
+//         console.log("running...");
+//         if(array[i]=== "nemo") {
+//             console.log("found Nemo!");
+//         }       
+//     }
+// }
 
-findNemo(everyone);
+// findNemo(everyone);
 
 // function findNemo(array) {
 //         for (let i = 0; i < array.length; i++) {
@@ -74,3 +74,6 @@ findNemo(everyone);
 // Looping
 // Outside function call (function())
 
+
+
+//developer.mozilla.org/javascript
