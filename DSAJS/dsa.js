@@ -124,13 +124,32 @@ const everyone =["dory","bruce","marlin",'nemo','gill','bloat','nigle',
 // findNemo3(everyone);
 
 
-const array1 =["a","b","c","d"];
-const array2 = ["w","x","y","z","r","t"];
+const array1 =["a","b","y","d"];
+const array2 = ["w","x","m","z","r","t"];
 
 
 function CommonItems(arr1, arr2) {
     //loop through first array and create object 
-    //wheeeeeeeeere properties === items in the array
+    //where properties === items in the array
+    let map = {}
+    for (let i = 0; i < arr1.length; i++) {
+        if (!map[arr1[i]]) {
+            // const item = arr1[i];
+            map[arr1[i]] = "yam ";
+        }   
+          
+    }
+    console.log(map);  
     //loop through second array and check if item 
     //in second array exists on created object.
+
+    for (let j = 0; j < arr2.length; j++) {
+        if (map[arr2[j]]) {
+            return true;
+        }        
+    }
+
+    return false;
 }
+
+console.log(CommonItems(array1,array2));
