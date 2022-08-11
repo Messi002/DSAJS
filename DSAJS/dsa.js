@@ -122,3 +122,15 @@ const everyone =["dory","bruce","marlin",'nemo','gill','bloat','nigle',
 //     }
 // }
 // findNemo3(everyone);
+
+
+const array1 =["a","b","c","d"];
+const array2 = ["w","x","y","z","r","t"];
+
+
+function CommonItems(arr1, arr2) {
+    //loop through first array and create object 
+    //wheeeeeeeeere properties === items in the array
+    //loop through second array and check if item 
+    //in second array exists on created object.
+}
