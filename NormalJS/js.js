@@ -93,8 +93,10 @@
 
 // console.log(item);
 
-const speak = ()=>{
- console.log('hello');
-}
+// const speak = ()=>{
+//  console.log('hello');
+// }
 
-speak();
+
+//Function hoisting means declare function before calling it
+// speak();
