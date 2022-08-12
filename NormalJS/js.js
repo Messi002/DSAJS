@@ -81,14 +81,20 @@
 // console.log(password.includes("@")
 // );
 
-const array = [5,100,10,80,50,1000,10];
+// const array = [5,100,10,80,50,1000,10];
 
-let item =0;
+// let item =0;
 
-for (let i = 0; i < array.length; i++) {
-    if (array[i] > item) {
-        item = array[i];
-    }    
+// for (let i = 0; i < array.length; i++) {
+//     if (array[i] > item) {
+//         item = array[i];
+//     }    
+// }
+
+// console.log(item);
+
+const speak = ()=>{
+ console.log('hello');
 }
 
-console.log(item);
+speak();
