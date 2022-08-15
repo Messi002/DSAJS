@@ -194,11 +194,27 @@
 // title.classList.toggle("success")
 // title.classList.toggle("success");
 
-const title = document.querySelector("article");
-console.log(title);
-console.log(title.children);
-Array.from(title.children).forEach( child => {
-    child.classList.add("success");
+// const title = document.querySelector("article");
+// console.log(title);
+// console.log(title.children);
+// Array.from(title.children).forEach( child => {
+//     child.classList.add("success");
+// })
+
+const ul = document.querySelector("ul");
+const li = document.querySelectorAll('li');
+const button = document.querySelector("button");
+
+button.addEventListener('click', () =>{
+    const liTag = document.createElement("li");
+    liTag.innerText = 'New Todos'
+    ul.prepend(liTag);
 })
 
-
+li.forEach( item => {
+    item.addEventListener('click', e => {
+        // console.log(e.target);
+        // e.target.style.textDecoration = 'line-through';
+        e.target.remove();
+    } );
+})
