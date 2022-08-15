@@ -114,3 +114,5 @@ user.age = 18;
 console.log(user.age);
 user["email"];
 console.log(user['email']="gareth@gmail.com");
+
+user.login();
