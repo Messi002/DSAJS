@@ -159,14 +159,34 @@
 // console.log(para);
 // para.innerText = "Hey! I'm Austin"
 // console.log(para);
+// const cont = document.querySelector('.content');
+// console.log(cont)
 
-const cont = document.querySelector('.content');
-console.log(cont)
+//  cont.innerHTML = "<h5>This is now a content</h5>";
 
- cont.innerHTML = "<h5>This is now a content</h5>";
+//  const people = ['Austin','Gareth','Mendes'];
 
- const people = ['Austin','Gareth','Mendes'];
+//  people.forEach( person => {
+//     cont.innerHTML += `<h5>${person}</h5>`;
+//  })
 
- people.forEach( person => {
-    cont.innerHTML += `<h5>${person}</h5>`;
- })
+// const cont1 = document.querySelector('body > div.content > h5:nth-child(2)');
+// console.log(cont1);
+// console.log(cont1.getAttribute("class"));
+// cont1.setAttribute("style","color:green");
+
+const paras = document.querySelectorAll("p");
+console.log(paras);
+
+paras.forEach( p => {
+    if (p.textContent.includes("error")) {
+        p.classList.add("error")
+    }else if (p.textContent.includes("success")){
+        p.classList.add("success")
+    }
+    else{
+     
+
+    }
+} )
+
