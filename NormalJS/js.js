@@ -105,7 +105,16 @@ let user = {
     name : "Austin",
     age: 19,
     email : "lareth@gmail.com",
-    login : () => console.log("The user is logged in")
+    blogs : [
+        {title: "10 things to know", likes: 30},
+        {title : "10 things to know", likes:45}
+    ],
+    login : () => console.log("The user is logged in"),
+    logBlogs(params) {
+        console.log("You can follow the blogs:");
+        this.blogs.forEach( blog => console.log(blog.title, blog.likes));
+        // this.blogs.map( (blog)=> console.log(`<h1> ${blog} </h1>`)  )
+    }
 }
 
 console.log(user.name);
@@ -116,3 +125,4 @@ user["email"];
 console.log(user['email']="gareth@gmail.com");
 
 user.login();
+user.logBlogs();
