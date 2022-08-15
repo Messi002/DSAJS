@@ -101,28 +101,47 @@
 //Function hoisting means declare function before calling it
 // speak();
 
-let user = {
-    name : "Austin",
-    age: 19,
-    email : "lareth@gmail.com",
-    blogs : [
-        {title: "10 things to know", likes: 30},
-        {title : "10 things to know", likes:45}
-    ],
-    login : () => console.log("The user is logged in"),
-    logBlogs(params) {
-        console.log("You can follow the blogs:");
-        this.blogs.forEach( blog => console.log(blog.title, blog.likes));
+
+//Objects
+
+
+// let user = {
+//     name : "Austin",
+//     age: 19,
+//     email : "lareth@gmail.com",
+//     blogs : [
+//         {title: "10 things to know", likes: 30},
+//         {title : "10 things to know", likes:45}
+//     ],
+    // login : () => console.log("The user is logged in"),
+    // logBlogs(params) {
+        // console.log("You can follow the blogs:");
+        // this.blogs.forEach( blog => console.log(blog.title, blog.likes));
         // this.blogs.map( (blog)=> console.log(`<h1> ${blog} </h1>`)  )
-    }
-}
+//     }
+// }
 
-console.log(user.name);
-console.log(user.age);
-user.age = 18;
-console.log(user.age);
-user["email"];
-console.log(user['email']="gareth@gmail.com");
+// console.log(user.name);
+// console.log(user.age);
+// user.age = 18;
+// console.log(user.age);
+// user["email"];
+// console.log(user['email']="gareth@gmail.com");
 
-user.login();
-user.logBlogs();
+// user.login();
+// user.logBlogs();
+
+
+//math object
+
+console.log(Math);
+ num1 = 8.2;
+num2 = 5.8;
+ console.log(Math.floor(num1));
+ console.log(Math.ceil(num2));
+ console.log(Math.trunc(num2));
+ console.log(Math.round(num2));
+
+ let random = Math.random();
+
+ console.log(Math.round(random * 100));
