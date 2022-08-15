@@ -204,10 +204,13 @@
 const ul = document.querySelector("ul");
 const li = document.querySelectorAll('li');
 const button = document.querySelector("button");
+const near = document.querySelector("body > ul > li:nth-child(1)");
+
+console.log(near);
 
 button.addEventListener('click', () =>{
     const liTag = document.createElement("li");
-    liTag.innerText = 'New Todos'
+    liTag.textContent = 'New Todos'
     ul.prepend(liTag);
 })
 
