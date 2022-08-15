@@ -175,18 +175,22 @@
 // console.log(cont1.getAttribute("class"));
 // cont1.setAttribute("style","color:green");
 
-const paras = document.querySelectorAll("p");
-console.log(paras);
+// const paras = document.querySelectorAll("p");
+// console.log(paras);
 
-paras.forEach( p => {
-    if (p.textContent.includes("error")) {
-        p.classList.add("error")
-    }else if (p.textContent.includes("success")){
-        p.classList.add("success")
-    }
-    else{
-     
+// paras.forEach( p => {
+//     if (p.textContent.includes("error")) {
+//         p.classList.add("error")
+//     }
+//      if (p.textContent.includes("success")){
+//         p.classList.add("success")
+//     }
+    
+// } )
 
-    }
-} )
+// const title = document.querySelector(".title")
+
+// toggle to add a class or remove it if it already exist
+// title.classList.toggle("success")
+// title.classList.toggle("success");
 
