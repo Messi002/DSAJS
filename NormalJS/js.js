@@ -134,14 +134,22 @@
 
 //math object
 
-console.log(Math);
- num1 = 8.2;
-num2 = 5.8;
- console.log(Math.floor(num1));
- console.log(Math.ceil(num2));
- console.log(Math.trunc(num2));
- console.log(Math.round(num2));
+// console.log(Math);
+//  num1 = 8.2;
+// num2 = 5.8;
+//  console.log(Math.floor(num1));
+//  console.log(Math.ceil(num2));
+//  console.log(Math.trunc(num2));
+//  console.log(Math.round(num2));
 
- let random = Math.random();
+//  let random = Math.random();
 
- console.log(Math.round(random * 100));
+//  console.log(Math.round(random * 100));
+
+
+//Interacting with the DOM
+const para = document.querySelector('body > div > p:nth-child(2)');
+
+console.log(para);
+
+// grap an element by ID
