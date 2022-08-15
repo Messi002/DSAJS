@@ -194,3 +194,11 @@
 // title.classList.toggle("success")
 // title.classList.toggle("success");
 
+const title = document.querySelector("article");
+console.log(title);
+console.log(title.children);
+Array.from(title.children).forEach( child => {
+    child.classList.add("success");
+})
+
+
