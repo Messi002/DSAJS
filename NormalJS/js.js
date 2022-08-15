@@ -100,3 +100,14 @@
 
 //Function hoisting means declare function before calling it
 // speak();
+
+let user = {
+    name : "Austin",
+    age: 19,
+    email : "lareth@gmail.com"
+}
+
+console.log(user.name);
+console.log(user.age);
+user.age = 18;
+console.log(user.age);
