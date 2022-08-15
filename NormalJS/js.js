@@ -214,10 +214,19 @@ button.addEventListener('click', () =>{
     ul.prepend(liTag);
 })
 
-li.forEach( item => {
-    item.addEventListener('click', e => {
+// li.forEach( item => {
+//     item.addEventListener('click', e => {
         // console.log(e.target);
         // e.target.style.textDecoration = 'line-through';
+        //e.stopPropagation();
+//         e.target.remove();
+//     } );
+// })
+
+
+ul.addEventListener('click', e => {
+    // console.log(e.target);
+    if (e.target.tagName === 'LI') {
         e.target.remove();
-    } );
+    }
 })
