@@ -104,10 +104,13 @@
 let user = {
     name : "Austin",
     age: 19,
-    email : "lareth@gmail.com"
+    email : "lareth@gmail.com",
+    login : () => console.log("The user is logged in")
 }
 
 console.log(user.name);
 console.log(user.age);
 user.age = 18;
 console.log(user.age);
+user["email"];
+console.log(user['email']="gareth@gmail.com");
