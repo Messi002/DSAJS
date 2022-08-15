@@ -148,8 +148,25 @@
 
 
 //Interacting with the DOM
-const para = document.querySelector('body > div > p:nth-child(2)');
+// const para = document.querySelector('body > div > p:nth-child(2)');
 
-console.log(para);
+// console.log(para);
 
 // grap an element by ID
+
+// const para = document.querySelector('p');
+
+// console.log(para);
+// para.innerText = "Hey! I'm Austin"
+// console.log(para);
+
+const cont = document.querySelector('.content');
+console.log(cont)
+
+ cont.innerHTML = "<h5>This is now a content</h5>";
+
+ const people = ['Austin','Gareth','Mendes'];
+
+ people.forEach( person => {
+    cont.innerHTML += `<h5>${person}</h5>`;
+ })
