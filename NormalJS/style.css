@@ -44,7 +44,7 @@ button{
 
 .error{
     padding:10px;
-    color:crimson;
+    border: 1px solid crimson;
 }
 
 .success{
@@ -53,8 +53,8 @@ button{
 }
 
 #error{
+    color:crimson;
     padding:10px;
-    border: 1px solid crimson;
 }
 
 #success{
