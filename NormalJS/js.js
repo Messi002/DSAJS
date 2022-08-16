@@ -29,8 +29,10 @@ const usernamePattern = /^[a-zA-Z]{6,12}$/;
 if (usernamePattern.test(username)) {
  feedback.textContent = 'Valid username';
 }else{
- feedback.textContext = "Invalid Username, must be between 6-12 and contain only letter"
-}
+
+        feedback.textContent = 'Invalid username must contain 6-12 characters and only characters';}
+
+
 })
 
 // regex101.com for pattern creation
