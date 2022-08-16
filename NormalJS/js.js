@@ -20,5 +20,15 @@
 form = document.querySelector(".signup-form");
 form.addEventListener('submit', e => {
         e.preventDefault();
-        console.log( form.username.value);
+        // console.log( form.username.value);
+const username = form.username.value;
+const usernamePattern = /^[a-zA-Z]{6,12}$/;
+
+if (usernamePattern.test(username)) {
+        
+}else{
+
+}
 })
+
+// regex101.com for pattern creation
