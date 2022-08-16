@@ -1,7 +1,7 @@
 // const nemo=["nemo"];
 // const large = new Array(1000).fill("nemo")
-const everyone =["dory","bruce","marlin",'nemo','gill','bloat','nigle',
-'squirt','darla','hank'];
+// const everyone =["dory","bruce","marlin",'nemo','gill','bloat','nigle',
+// 'squirt','darla','hank'];
 
 // function findNemo(array) {
 //     let t0= performance.now();
@@ -124,36 +124,58 @@ const everyone =["dory","bruce","marlin",'nemo','gill','bloat','nigle',
 // findNemo3(everyone);
 
 
-const array1 =["a","b","m","l"];
-const array2 = ["w","x","m","z","r","t"];
-let map = {}
+// const array1 =["a","b","m","l"];
+// const array2 = ["w","x","m","z","r","t"];
+// let map = {}
 
-function MapArray1(arr1) {
-    for (let i = 0; i < arr1.length; i++) {
-        if (!map[arr1[i]]) {
+// function MapArray1(arr1) {
+//     for (let i = 0; i < arr1.length; i++) {
+//         if (!map[arr1[i]]) {
             // const item = arr1[i];
-            map[arr1[i]] = "yam ";
-        }   
+//             map[arr1[i]] = "yam ";
+//         }   
           
-    }
-}
+//     }
+// }
 
 
 
-function CommonItems(arr1, arr2) {
+// function CommonItems(arr1, arr2) {
     //loop through first array and create object 
     //where properties === items in the array
   
-    MapArray1(arr1);
-    console.log(map);  
+    // MapArray1(arr1);
+    // console.log(map);  
     //loop through second array and check if item 
     //in second array exists on created object.
-    for (let j = 0; j < arr2.length; j++) {
-        if (map[arr2[j]]) {
-            return true;
-        }        
+//     for (let j = 0; j < arr2.length; j++) {
+//         if (map[arr2[j]]) {
+//             return true;
+//         }        
+//     }
+//     return false;
+// }
+
+// console.log(CommonItems(array1,array2));
+
+
+class MyArray{
+    constructor(){
+        this.length=0;
+        this.data = {};
     }
-    return false;
+
+    get (index){
+        return this.data[index];
+    }
+
+    push(item){
+        const lastItem = this.data[item] = this.length;
+        this.length++;
+        return lastItem;
+    }
 }
 
-console.log(CommonItems(array1,array2));
+const newArray = new MyArray();
+newArray.push("a")
+console.log(newArray);
