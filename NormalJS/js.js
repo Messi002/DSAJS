@@ -17,22 +17,34 @@
 //         popup.style.display = "none";
 //        });
 
+
+
 form = document.querySelector(".signup-form");
-feedback = document.querySelector(".feedback")
+feedback = document.querySelector(".feedback");
+const usernamePattern = /^[a-zA-Z]{6,12}$/;
+
 
 form.addEventListener('submit', e => {
         e.preventDefault();
         // console.log( form.username.value);
 const username = form.username.value;
-const usernamePattern = /^[a-zA-Z]{6,12}$/;
 
 if (usernamePattern.test(username)) {
+ feedback.setAttribute("id",'success');
  feedback.textContent = 'Valid username';
 }else{
-
-        feedback.textContent = 'Invalid username must contain 6-12 characters and only characters';}
-
+ feedback.setAttribute("id",'error');
+feedback.textContent = 'Invalid username must contain 6-12 characters and only characters';
+}
 
 })
 
 // regex101.com for pattern creation
+form.username.addEventListener('keyup', e => {
+        if (usernamePattern.test(e.target.value)) {
+                form.username.setAttribute('class','success');
+        } else {
+                form.username.setAttribute('class','error');  
+                
+        }
+})
