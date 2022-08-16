@@ -170,12 +170,23 @@ class MyArray{
     }
 
     push(item){
-        const lastItem = this.data[item] = this.length;
+         this.data[this.length]=item ;
         this.length++;
-        return lastItem;
+        return this.length;
+    }
+
+
+    pop(){
+       const lastItem = this.data[this.length -1];
+       delete this.data[this.length -1]; 
+       this.length--;
+       return lastItem;
     }
 }
 
 const newArray = new MyArray();
-newArray.push("a")
+newArray.push("a");
+newArray.push("b");
+newArray.push("c");
+newArray.pop();
 console.log(newArray);
