@@ -18,6 +18,8 @@
 //        });
 
 form = document.querySelector(".signup-form");
+feedback = document.querySelector(".feedback")
+
 form.addEventListener('submit', e => {
         e.preventDefault();
         // console.log( form.username.value);
@@ -25,9 +27,9 @@ const username = form.username.value;
 const usernamePattern = /^[a-zA-Z]{6,12}$/;
 
 if (usernamePattern.test(username)) {
-        
+ feedback.textContent = 'Valid username';
 }else{
-
+ feedback.textContext = "Invalid Username, must be between 6-12 and contain only letter"
 }
 })
 
