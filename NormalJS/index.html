@@ -7,20 +7,23 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <style>
-      li{
-        list-style-type:none;
-        margin: 8px auto;
-        padding: 8px;
-        background-color: #eee;
-        /* max-width: 200px; */
-
-      }
+     form{
+      max-width: 200px;
+      margin: 40px auto;
+      background: white;
+      padding: 10px;
+     }
+     input{
+      display: block;
+      margin: 10px auto;
+      padding: 4px;
+     }
 
     </style>
 </head>
 <body>
    
-  <button>Click me!</button>
+  <!-- <button>Click me!</button>
 
   <div class="wrapper">
     <div class="pop-up">
@@ -31,7 +34,12 @@
         <a href="#">This way...</a>
       </div>
     </div>
-  </div>
+  </div> -->
+
+  <form action="" class="signup-form">
+    <input type="text" id="username" placeholder="username">
+    <input type="submit" value="submit">
+  </form>
 
     <script src="./js.js"></script>
 </body>
