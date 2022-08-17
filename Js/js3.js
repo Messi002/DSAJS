@@ -54,7 +54,7 @@
 
 //Sort Method
 
-const scores =[10,30,15,25,50,40,5];
+// const scores =[10,30,15,25,50,40,5];
 
-scores.sort( (a,b)=> a-b );
-console.log(scores);
+// scores.sort( (a,b)=> a-b );
+// console.log(scores);
