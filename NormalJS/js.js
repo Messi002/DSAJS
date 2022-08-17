@@ -68,5 +68,5 @@ console.log(userAnswers);
         }
  } )
 
-answerDiv.textContent= `${score}`;
+answerDiv.textContent= `${score}%`;
 });
