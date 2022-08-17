@@ -14,3 +14,21 @@
 // console.log(users);
 
 
+//Map Methond
+const Users = [
+    {name: "Austin", price: 100},
+    {name: "Shelly", price: 70},
+    {name: "Luigi", price: 20},
+    {name: "Luigi", price: 50},
+    {name: "Jacky", price: 15},
+];
+
+const users = Users.map((user) => {
+    if (user.price > 30) {
+        return {name: user.name, price: user.price /2};
+    } else {
+        return user;
+    }
+})
+
+console.log(users);
