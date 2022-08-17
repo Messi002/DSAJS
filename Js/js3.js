@@ -15,20 +15,39 @@
 
 
 //Map Methond
-const Users = [
-    {name: "Austin", price: 100},
-    {name: "Shelly", price: 70},
-    {name: "Luigi", price: 20},
-    {name: "Luigi", price: 50},
-    {name: "Jacky", price: 15},
-];
+// const Users = [
+//     {name: "Austin", price: 100},
+//     {name: "Shelly", price: 70},
+//     {name: "Luigi", price: 20},
+//     {name: "Luigi", price: 50},
+//     {name: "Jacky", price: 15},
+// ];
 
-const users = Users.map((user) => {
-    if (user.price > 30) {
-        return {name: user.name, price: user.price /2};
-    } else {
-        return user;
-    }
-})
+// const users = Users.map((user) => {
+//     if (user.price > 30) {
+//         return {name: user.name, price: user.price /2};
+//     } else {
+//         return user;
+//     }
+// })
 
-console.log(users);
+// console.log(users);
+
+
+//Reduce Method
+// const Users =[
+//     {name: "Austin", premium: true},
+//     {name: "Shelly", premium: false},
+//     {name: "Luigi", premium: true},
+//     {name: "Shaun", premium: false},
+//     {name: "Joe", premium: true}
+// ];
+
+// const PreNum = Users.reduce((acc,curr)=>{
+// if (curr.premium === true ) {
+//     acc++;
+// }
+// return acc;
+// },0)
+
+// console.log(PreNum);
