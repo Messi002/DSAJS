@@ -200,12 +200,13 @@ function Reverse(strg) {
 }
 
 function Reverse2(strg) {
-    backward =[];
-    length = strg.length -1;
-    for (let index = length; length>= 0; length--) {
-         backward.push[strg[length]]        
+   const backward =[];
+   const length = strg.length -1;
+    for (let index = length; index>= 0; index--) {
+         backward.push(strg[index]);        
     }
-return backward.join(",");
+    console.log(backward);
+return backward.join("");
 }
 
 Reverse2(name);
