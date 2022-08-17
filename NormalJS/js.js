@@ -68,5 +68,15 @@ console.log(userAnswers);
         }
  } )
 
-answerDiv.textContent= `${score}%`;
+ scrollTo(0,0);
+
+ let output = 0;
+ const timer = setInterval(()=>{
+answerDiv.textContent= `${output}%`;
+if (output === score) {
+        clearInterval(timer);
+} else {
+        output++;
+}
+ },10);
 });
