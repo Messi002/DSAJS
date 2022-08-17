@@ -159,34 +159,53 @@
 // console.log(CommonItems(array1,array2));
 
 
-class MyArray{
-    constructor(){
-        this.length=0;
-        this.data = {};
-    }
+// class MyArray{
+//     constructor(){
+//         this.length=0;
+//         this.data = {};
+//     }
 
-    get (index){
-        return this.data[index];
-    }
+//     get (index){
+//         return this.data[index];
+//     }
 
-    push(item){
-         this.data[this.length]=item ;
-        this.length++;
-        return this.length;
-    }
+//     push(item){
+//          this.data[this.length]=item ;
+//         this.length++;
+//         return this.length;
+//     }
 
 
-    pop(){
-       const lastItem = this.data[this.length -1];
-       delete this.data[this.length -1]; 
-       this.length--;
-       return lastItem;
-    }
+//     pop(){
+//        const lastItem = this.data[this.length -1];
+//        delete this.data[this.length -1]; 
+//        this.length--;
+//        return lastItem;
+//     }
+// }
+
+// const newArray = new MyArray();
+// newArray.push("a");
+// newArray.push("b");
+// newArray.push("c");
+// newArray.pop();
+// console.log(newArray);
+
+name='Austin is here coming back'
+
+function Reverse(strg) {
+    test = strg.split("").reverse().join(""); 
+    console.log(test);
+    
 }
 
-const newArray = new MyArray();
-newArray.push("a");
-newArray.push("b");
-newArray.push("c");
-newArray.pop();
-console.log(newArray);
+function Reverse2(strg) {
+    backward =[];
+    length = strg.length -1;
+    for (let index = length; length>= 0; length--) {
+         backward.push[strg[length]]        
+    }
+return backward.join(",");
+}
+
+Reverse2(name);
