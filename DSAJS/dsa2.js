@@ -42,32 +42,54 @@
 // myHashTable.set('apples',100);
 // myHashTable.get('grapes');
 
-const Array = [2,5,2,5,10,6,9,50,5]
+// const Array = [2,5,2,5,10,6,9,50,5]
 
-function FirstCharacterRecursion(arr) {
-    for (let i = 0; i < arr.length; i++) {
-        for (let j = i + 1; j < arr.length; j++) {
-            if (arr[i]===arr[j]) {
-                return arr[i];
-            }            
-        }
+// function FirstCharacterRecursion(arr) {
+//     for (let i = 0; i < arr.length; i++) {
+//         for (let j = i + 1; j < arr.length; j++) {
+//             if (arr[i]===arr[j]) {
+//                 return arr[i];
+//             }            
+//         }
         
+//     }
+//     return undefined;
+// }
+
+// function FirstCharacterRecursionV2(arr) {
+//     let map = {};
+
+//     for (let i = 0; i< arr.length; i++) {
+//             if (!map[arr[i]]) {
+//                 map[arr[i]] =arr[i];
+//             } else {
+//                 return map[arr[i]];
+//             }        
+//     }
+
+//     return undefined;    
+// }
+
+// console.log(FirstCharacterRecursionV2(Array));
+
+//LinkedList
+
+class LinkedList{
+    constructor(value)
+    {
+        this.head= {
+            value : value,
+            next: null
+        },
+        this.tail = {
+            value : this.head
+        },
+        this.length = 1;
     }
-    return undefined;
 }
 
-function FirstCharacterRecursionV2(arr) {
-    let map = {};
+const myLinkedList = new LinkedList(6);
 
-    for (let i = 0; i< arr.length; i++) {
-            if (!map[arr[i]]) {
-                map[arr[i]] =arr[i];
-            } else {
-                return map[arr[i]];
-            }        
-    }
+console.log(myLinkedList);
 
-    return undefined;    
-}
 
-console.log(FirstCharacterRecursionV2(Array));
