@@ -81,15 +81,20 @@ class LinkedList{
             value : value,
             next: null
         },
-        this.tail = {
-            value : this.head
-        },
+        this.tail = this.head;
         this.length = 1;
+    }
+    append(value){
+        this.head.next = value;
+        // this.tail.value= value;
+        // this.tail.next = null;
+        this.length++;
     }
 }
 
 const myLinkedList = new LinkedList(6);
-
+myLinkedList.append(12)
+myLinkedList.append(24)
 console.log(myLinkedList);
 
 
