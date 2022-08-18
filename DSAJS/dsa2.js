@@ -42,7 +42,7 @@
 // myHashTable.set('apples',100);
 // myHashTable.get('grapes');
 
-const Array = [2,5,6,9,50,2,5]
+const Array = [2,5,6,9,50,5]
 
 function FirstCharacterRecursion(arr) {
     for (let i = 0; i < arr.length; i++) {
@@ -59,9 +59,9 @@ function FirstCharacterRecursion(arr) {
 function FirstCharacterRecursionV2(arr) {
     let map = {};
 
-    for (let i = 0; i < arr.length; i++) {
+    for (let i = 0; i< arr.length; i++) {
             if (!map[arr[i]]) {
-                map[arr[i]] =i;
+                map[arr[i]] =arr[i];
             } else {
                 return map[arr[i]];
             }        
