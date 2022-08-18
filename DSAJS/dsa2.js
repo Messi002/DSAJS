@@ -85,9 +85,12 @@ class LinkedList{
         this.length = 1;
     }
     append(value){
-        this.head.next = value;
-        // this.tail.value= value;
-        // this.tail.next = null;
+        const newNode = {
+            value : value,
+            next : null
+        }
+        this.tail.next = newNode;
+        this.tail = newNode;
         this.length++;
     }
 }
@@ -95,6 +98,7 @@ class LinkedList{
 const myLinkedList = new LinkedList(6);
 myLinkedList.append(12)
 myLinkedList.append(24)
+myLinkedList.append(50)
 console.log(myLinkedList);
 
 
