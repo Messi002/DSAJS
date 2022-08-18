@@ -212,8 +212,19 @@
 // Reverse2(name);
 
 Array1 = [1,15,36,60,24];
-Array2 = [4,10,18,20];
+Array2 = [4,10];
 
 function MergedSortedArray(arr1, arr2) {
-    
+    const arr3 = [];
+    for (let index = 0; index < arr1.length; index++) {
+        arr3.push(arr1[index]);
+    }
+    for (let index = 0; index < arr2.length; index++) {
+        arr3.push(arr2[index]);
+    }
+    arr3.sort( (a,b)=> a-b );
+    console.log(arr3);
+
 }
+
+MergedSortedArray(Array1,Array2);
