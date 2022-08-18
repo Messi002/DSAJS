@@ -191,22 +191,29 @@
 // newArray.pop();
 // console.log(newArray);
 
-name='Austin is here coming back'
+// name='Austin is here coming back'
 
-function Reverse(strg) {
-    test = strg.split("").reverse().join(""); 
-    console.log(test);
+// function Reverse(strg) {
+//     test = strg.split("").reverse().join(""); 
+//     console.log(test);
+    
+// }
+
+// function Reverse2(strg) {
+//    const backward =[];
+//    const length = strg.length -1;
+//     for (let index = length; index>= 0; index--) {
+//          backward.push(strg[index]);        
+//     }
+//     console.log(backward);
+// return backward.join("");
+// }
+
+// Reverse2(name);
+
+Array1 = [1,15,36,60,24];
+Array2 = [4,10,18,20];
+
+function MergedSortedArray(arr1, arr2) {
     
 }
-
-function Reverse2(strg) {
-   const backward =[];
-   const length = strg.length -1;
-    for (let index = length; index>= 0; index--) {
-         backward.push(strg[index]);        
-    }
-    console.log(backward);
-return backward.join("");
-}
-
-Reverse2(name);
