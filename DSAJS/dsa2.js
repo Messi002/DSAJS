@@ -9,33 +9,51 @@
 // console.log(user.color[1]);
 
 
-class HashTable{
-    constructor(size){
-        this.data = new Array(size);
-    }
+// class HashTable{
+//     constructor(size){
+//         this.data = new Array(size);
+//     }
 
-_hash(key){
-    let hash = 0;
-    for (let i = 0; i < key.length; i++) {
-        hash = (hash + key.charCodeAt(i) * i)%
-        this.data.length        
-    }
-    return hash;
-}
+// _hash(key){
+//     let hash = 0;
+//     for (let i = 0; i < key.length; i++) {
+//         hash = (hash + key.charCodeAt(i) * i)%
+//         this.data.length        
+//     }
+//     return hash;
+// }
 
-set(keys, value) {
-  let address = this._hash(keys);
-    if (!this.data[address]) {
-    this.data[address]=[];
-    }
-    this.data[address].push([keys, value]);
-    return this.data
-}
-}
+// set(keys, value) {
+//   let address = this._hash(keys);
+//     if (!this.data[address]) {
+//     this.data[address]=[];
+//     }
+//     this.data[address].push([keys, value]);
+//     return this.data
+// }
+// }
 
-const myHashTable = new HashTable(50);
+// const myHashTable = new HashTable(50);
 // console.log(myHashTable._hash("grapes"));
-myHashTable.set('grapes',10000);
+// console.log(
+// myHashTable.set('grapes',10000)
+// );
 // myHashTable.set('mangoes',400);
 // myHashTable.set('apples',100);
 // myHashTable.get('grapes');
+
+const Array = [2,3]
+
+function FirstCharacterRecursion(arr) {
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = i + 1; j < arr.length; j++) {
+            if (arr[i]===arr[j]) {
+                return arr[i];
+            }            
+        }
+        
+    }
+    return undefined;
+}
+
+console.log(FirstCharacterRecursion(Array));
