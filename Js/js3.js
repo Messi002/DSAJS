@@ -69,65 +69,72 @@ const addForm = document.querySelector('.add');
 const list = document.querySelector(".todos");
 const search = document.querySelector(".search > input");
 
-generateTemplate = todo => {
-    const html = `
-    </li> <li class="list-group-item d-flex justify-content-between align-items-center">
-    <span>${todo}</span>
-    <i class="far fa-trash-alt delete">x</i>
-</li>
-    `;
+// generateTemplate = todo => {
+//     const html = `
+//     </li> <li class="list-group-item d-flex justify-content-between align-items-center">
+//     <span>${todo}</span>
+//     <i class="far fa-trash-alt delete">x</i>
+// </li>
+//     `;
 
-    list.innerHTML += html; 
+//     list.innerHTML += html; 
 
-}
+// }
 
-addForm.addEventListener('submit', e => {
-    e.preventDefault();
-    todo = addForm.add.value.trim()
+// addForm.addEventListener('submit', e => {
+//     e.preventDefault();
+//     todo = addForm.add.value.trim()
     
-    if (todo.length) {
-        generateTemplate(todo);
-        addForm.reset();
-    }
-})
+//     if (todo.length) {
+//         generateTemplate(todo);
+//         addForm.reset();
+//     }
+// })
 
 //Delete todos 
 
-list.addEventListener('click', e => {
-    if (e.target.classList.contains('delete')) {
-        e.target.parentElement.remove();
-    }
-});
+// list.addEventListener('click', e => {
+//     if (e.target.classList.contains('delete')) {
+//         e.target.parentElement.remove();
+//     }
+// });
 
 filteredTerm = term => {
    Array.from(list.children)
     .filter((todo)=>{
-        // console.log(todo.textContent.includes(term));
-        return todo.textContent.toLowerCase().includes(term); 
+        console.log(todo.textContent.includes(term));
+        return !todo.textContent.toLowerCase().includes(term); 
     }).forEach((item)=>{
-        // item.classList.add('filtered');
-        item.classList.remove('filtered');
+        item.classList.add('filtered');
+        // item.classList.remove('filtered');
 
         
     })
 
     Array.from(list.children)
     .filter((todo)=>{
-        // console.log(todo.textContent.includes(term));
-        return !todo.textContent.toLowerCase().includes(term); 
+        console.log(todo.textContent.includes(term));
+        return todo.textContent.toLowerCase().includes(term); 
     }).forEach((item)=>{
-        // item.classList.remove('filtered');
-        item.classList.add('filtered');
+        item.classList.remove('filtered');
         
     })
 
 
 }
 
-//keyup events
+// keyup events
 search.addEventListener('keyup', (e)=> {
-    e.preventDefault();
-    term = search.value.trim().toLowerCase();
-    filteredTerm(term);
+//     e.preventDefault();
+//     term = search.value.trim().toLowerCase();
+//     filteredTerm(term);
     
-} )
+// } )
+
+// const num = [1,2,5,8,10,60,50];
+ 
+// const fil = num.filter((item)=>{
+//     return item > 20;
+// })
+
+// console.log(fil);
