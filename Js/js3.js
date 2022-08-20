@@ -105,7 +105,7 @@ filteredTerm = term => {
         // console.log(todo.textContent.includes(term));
         return !todo.textContent.toLowerCase().includes(term); 
     }).forEach((item)=>{
-        item.style.display ='none';
+        item.classList.add('filtered');
     })
 
 }
