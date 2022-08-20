@@ -143,24 +143,24 @@ const search = document.querySelector(".search > input");
 //********************************************** */
 //Building a CLOCK....
 
-const clock = document.querySelector('.clock');
+// const clock = document.querySelector('.clock');
 
-tick = () => {
-    const now = new Date();
-    let hour = now.getHours();
-    let mins = now.getMinutes();
-    let secs = now.getSeconds();
+// tick = () => {
+//     const now = new Date();
+//     let hour = now.getHours();
+//     let mins = now.getMinutes();
+//     let secs = now.getSeconds();
 
-    const html = `
-        <span>${hour}</span>:
-        <span>${mins}</span>:
-        <span>${secs}</span>
-    `;
+//     const html = `
+//         <span>${hour}</span>:
+//         <span>${mins}</span>:
+//         <span>${secs}</span>
+//     `;
     
-    clock.innerHTML = html;
-}
+//     clock.innerHTML = html;
+// }
 
-setInterval(tick,1000);
+// setInterval(tick,1000);
 
 
 //********************************************** */
