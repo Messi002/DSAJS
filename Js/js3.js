@@ -109,7 +109,7 @@ filteredTerm = term => {
         // item.classList.remove('filtered');
 
         
-    })
+    // })
 
 //     Array.from(list.children)
 //     .filter((todo)=>{
