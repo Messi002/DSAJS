@@ -67,6 +67,7 @@
 
 const addForm = document.querySelector('.add');
 const list = document.querySelector(".todos");
+const search = document.querySelector(".search");
 
 generateTemplate = todo => {
     const html = `
@@ -97,3 +98,8 @@ list.addEventListener('click', e => {
         e.target.parentElement.remove();
     }
 })
+
+//keyup events
+search.addEventListener('keyup', (e)=> {
+    console.log(e.target.inputsearch.vlaue);
+} )
