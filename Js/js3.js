@@ -103,7 +103,9 @@ filteredTerm = term => {
    Array.from(list.children)
     .filter((todo)=>{
         // console.log(todo.textContent.includes(term));
-        return !todo.textContent.includes(term); 
+        return !todo.textContent.toLowerCase().includes(term); 
+    }).forEach((item)=>{
+        item.style.display ='none';
     })
 
 }
@@ -111,7 +113,7 @@ filteredTerm = term => {
 //keyup events
 search.addEventListener('keyup', (e)=> {
     e.preventDefault();
-    term = search.value.trim();
+    term = search.value.trim().toLowerCase();
     filteredTerm(term);
     
 } )
