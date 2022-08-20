@@ -169,3 +169,7 @@ const search = document.querySelector(".search > input");
 
 //********************************************** */
 //Asynchronous Programming...
+const request = new XMLHttpRequest;
+
+
+//********************************************** */
