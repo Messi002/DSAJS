@@ -58,3 +58,11 @@
 
 // scores.sort( (a,b)=> a-b );
 // console.log(scores);
+
+
+/**************/
+//Add ToDo
+
+const addForm = document.querySelector('.add');
+
+addForm
