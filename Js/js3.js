@@ -145,16 +145,23 @@ const search = document.querySelector(".search > input");
 
 const clock = document.querySelector('.clock');
 
-setInterval(tick,1000);
-
 tick = () => {
     const now = new Date();
-    const html = `
-        <span>${}</span>
-    `;
+    let hour = now.getHours();
+    let mins = now.getMinutes();
+    let secs = now.getSeconds();
 
+    const html = `
+        <span>${hour}</span>:
+        <span>${mins}</span>:
+        <span>${secs}</span>
+    `;
+    
     clock.innerHTML = html;
 }
+
+setInterval(tick,1000);
+
 
 //********************************************** */
 
