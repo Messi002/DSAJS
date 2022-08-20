@@ -143,6 +143,19 @@ const search = document.querySelector(".search > input");
 //********************************************** */
 //Building a CLOCK....
 
+const clock = document.querySelector('.clock');
+
+setInterval(tick,1000);
+
+tick = () => {
+    const now = new Date();
+    const html = `
+        <span>${}</span>
+    `;
+
+    clock.innerHTML = html;
+}
+
 //********************************************** */
 
 
