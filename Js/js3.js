@@ -169,22 +169,30 @@ const search = document.querySelector(".search > input");
 
 //********************************************** */
 //Asynchronous Programming...
-const request = new XMLHttpRequest;
+const getTodos = callbckfn => {
+    const request = new XMLHttpRequest;
 
 request.addEventListener('readystatechange', ()=>{
     if (request.readyState === 4 && request.status === 200) {
-        console.log(request, request.responseText);
+        // console.log(request, request.responseText);
+        callbckfn(undefined, request.responseText);
     }else if(request.readyState === 4){
-        console.log('could not fetch data');
+        // console.log('could not fetch data');
+        callbckfn('could not fetch data', undefined);
     }
 } )
 
 request.open('GET','https://jsonplaceholder.typicode.com/todos/')
 request.send();
 
+}
 
 getTodos((err, data)=>{
-
+    if (err) {
+        console.log(err);
+    } else {
+        console.log(data);
+    }
 })
 
 //********************************************** */
