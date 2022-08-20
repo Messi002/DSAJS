@@ -67,7 +67,7 @@
 
 const addForm = document.querySelector('.add');
 const list = document.querySelector(".todos");
-const search = document.querySelector(".search");
+const search = document.querySelector(".search > input");
 
 generateTemplate = todo => {
     const html = `
@@ -97,9 +97,17 @@ list.addEventListener('click', e => {
     if (e.target.classList.contains('delete')) {
         e.target.parentElement.remove();
     }
-})
+});
+
+filteredTerm = term => {
+    
+}
 
 //keyup events
 search.addEventListener('keyup', (e)=> {
-    console.log(e.target.inputsearch.vlaue);
+    e.preventDefault();
+    term = e.target.value.trim();
+
+    filteredTerm(term);
+    
 } )
