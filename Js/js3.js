@@ -66,12 +66,18 @@
 
 
 const addForm = document.querySelector('.add');
-const list = document.querySelector("todos");
+const list = document.querySelector(".todos");
 
 generateTemplate = todo => {
     const html = `
-    
+    </li> <li class="list-group-item d-flex justify-content-between align-items-center">
+    <span>${todo}</span>
+    <i class="far fa-trash-alt delete">x</i>
+</li>
     `;
+
+    list.innerHTML += html; 
+
 }
 
 addForm.addEventListener('submit', e => {
@@ -80,5 +86,14 @@ addForm.addEventListener('submit', e => {
     
     if (todo.length) {
         generateTemplate(todo);
+        addForm.reset();
+    }
+})
+
+//Delete todos 
+
+list.addEventListener('click', e => {
+    if (e.target.classList.contains('delete')) {
+        e.target.parentElement.remove();
     }
 })
