@@ -99,13 +99,13 @@ const search = document.querySelector(".search > input");
 //     }
 // });
 
-filteredTerm = term => {
-   Array.from(list.children)
-    .filter((todo)=>{
-        console.log(todo.textContent.includes(term));
-        return !todo.textContent.toLowerCase().includes(term); 
-    }).forEach((item)=>{
-        item.classList.add('filtered');
+// filteredTerm = term => {
+//    Array.from(list.children)
+//     .filter((todo)=>{
+//         console.log(todo.textContent.includes(term));
+//         return !todo.textContent.toLowerCase().includes(term); 
+//     }).forEach((item)=>{
+//         item.classList.add('filtered');
         // item.classList.remove('filtered');
 
         
