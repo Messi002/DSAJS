@@ -66,7 +66,13 @@
 
 
 const addForm = document.querySelector('.add');
-const list = document.querySelector("")
+const list = document.querySelector("todos");
+
+generateTemplate = todo => {
+    const html = `
+    
+    `;
+}
 
 addForm.addEventListener('submit', e => {
     e.preventDefault();
