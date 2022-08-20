@@ -63,6 +63,16 @@
 /**************/
 //Add ToDo
 
-const addForm = document.querySelector('.add');
 
-addForm
+
+const addForm = document.querySelector('.add');
+const list = document.querySelector("")
+
+addForm.addEventListener('submit', e => {
+    e.preventDefault();
+    todo = addForm.add.value.trim()
+    
+    if (todo.length) {
+        generateTemplate(todo);
+    }
+})
