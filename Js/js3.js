@@ -111,20 +111,20 @@ filteredTerm = term => {
         
     })
 
-    Array.from(list.children)
-    .filter((todo)=>{
-        console.log(todo.textContent.includes(term));
-        return todo.textContent.toLowerCase().includes(term); 
-    }).forEach((item)=>{
-        item.classList.remove('filtered');
+//     Array.from(list.children)
+//     .filter((todo)=>{
+//         console.log(todo.textContent.includes(term));
+//         return todo.textContent.toLowerCase().includes(term); 
+//     }).forEach((item)=>{
+//         item.classList.remove('filtered');
         
-    })
+//     })
 
 
-}
+// }
 
 // keyup events
-search.addEventListener('keyup', (e)=> {
+// search.addEventListener('keyup', (e)=> {
 //     e.preventDefault();
 //     term = search.value.trim().toLowerCase();
 //     filteredTerm(term);
