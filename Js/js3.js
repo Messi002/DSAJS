@@ -100,14 +100,18 @@ list.addEventListener('click', e => {
 });
 
 filteredTerm = term => {
-    
+   Array.from(list.children)
+    .filter((todo)=>{
+        // console.log(todo.textContent.includes(term));
+        return !todo.textContent.includes(term); 
+    })
+
 }
 
 //keyup events
 search.addEventListener('keyup', (e)=> {
     e.preventDefault();
-    term = e.target.value.trim();
-
+    term = search.value.trim();
     filteredTerm(term);
     
 } )
