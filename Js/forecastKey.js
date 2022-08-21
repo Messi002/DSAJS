@@ -28,9 +28,10 @@ const getCity = async (city) => {
 }
 
 
-getCity('manchester')
- .then(data => {
+getCity('manchester').then(data => {
     return getWeather(data.Key)
  })
- .then( data )
+ .then( data => {
+
+ } )
  .catch(err => console.log(err));
