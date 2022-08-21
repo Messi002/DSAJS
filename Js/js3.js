@@ -202,14 +202,16 @@ const search = document.querySelector(".search > input");
 // Weather Pasrt
 
 const cityForm = document.querySelector('form');
+const card = document.querySelector('.card');
+const details = document.querySelector('.details');
 
 const updateCity = async (city) => {
     const cityDets = await getCity(city);
     const weather = await getWeather(cityDets.key);
 
     return {
-        cityDets : cityDets,
-        weather : weather
+         cityDets,
+         weather
     }
 }
 
