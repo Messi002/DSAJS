@@ -1,25 +1,35 @@
-class User{
+// class User{
     
-    constructor(name='Austin',email='Austin@mirsquared.cm'){
-        this.name = name,
-        this.email=email,
-        this.score = 0;
-    }
+//     constructor(name='Austin',email='Austin@mirsquared.cm'){
+//         this.name = name,
+//         this.email=email,
+//         this.score = 0;
+//     }
 
-    login(){
-        console.log(`${this.name} just logged in...`);
-        return this;
-    }
-    logout(){
-        console.log(`${this.name} just logged out...`);
-        return this;
-    }
-    incScore(){
-        this.score++;
-        console.log(`${this.name} has a score of ${this.score}`);
-        return this;
+//     login(){
+//         console.log(`${this.name} just logged in...`);
+//         return this;
+//     }
+//     logout(){
+//         console.log(`${this.name} just logged out...`);
+//         return this;
+//     }
+//     incScore(){
+//         this.score++;
+//         console.log(`${this.name} has a score of ${this.score}`);
+//         return this;
+//     }
+// }
+
+function User(username='Austin', email='Austin@mirsquared.cm') {
+    this.username = username;
+    this.email = email;
+    this.login = function (params) {
+        console.log(`${this.username} has logged in`);
     }
 }
+
+
 
 const userOne = new User();
 const userThree = new User('Gareth');
@@ -29,7 +39,7 @@ const userFive = new User('Mareth');
 console.log(userOne.name, userOne.email);
 const userTwo = new User('Lareth','lareth@mirsquared.com');
 console.log(userTwo.name,userTwo.email);
-userOne.login().logout().incScore().incScore();
+// userOne.login().logout().incScore().incScore();
 userTwo.login();
 
 let users = [userOne, userTwo,userThree,userFour,userFive,userSix];
@@ -43,5 +53,5 @@ class Admin extends User{
 
 const AdminOne = new Admin();
 
-AdminOne.deleteUser(userFour)
+// AdminOne.deleteUser(userSix)
 
