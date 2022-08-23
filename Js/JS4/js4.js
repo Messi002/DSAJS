@@ -21,24 +21,24 @@
 //     }
 // }
 
-function User(username='Austin', email='Austin@mirsquared.cm') {
-    this.username = username;
-    this.email = email;
+// function User(username='Austin', email='Austin@mirsquared.cm') {
+//     this.username = username;
+//     this.email = email;
     
-}
+// }
 
-User.prototype.login = function (params) {
-    console.log(`${this.username} has logged in`);
-    return this;
-}
+// User.prototype.login = function (params) {
+//     console.log(`${this.username} has logged in`);
+//     return this;
+// }
 
-User.prototype.logout = function (params) {
-    console.log(`${this.username} has logged out`);
-    return this;
-}
+// User.prototype.logout = function (params) {
+//     console.log(`${this.username} has logged out`);
+//     return this;
+// }
 
-const userOne = new User('Lareth','Lareth@mirsquared.cm');
-console.log(userOne);
+// const userOne = new User('Lareth','Lareth@mirsquared.cm');
+// console.log(userOne);
 
 // const userOne = new User();
 // const userThree = new User('Gareth');
