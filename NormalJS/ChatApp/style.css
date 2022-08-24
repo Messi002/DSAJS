@@ -14,3 +14,8 @@ body{
 .btn:focus{
     outline: none !important;
 }
+
+.update-msg{
+    text-align: center;
+    margin: 20px auto;
+}
