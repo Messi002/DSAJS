@@ -20,5 +20,21 @@ class ChatRoom{
             created_at:firebase.firestore.Timestamp.fromDate(now)
         }
         const res = await this.chats.add('chat')
+        return res;
+    }
+
+    getChats(clbkfn){
+        this.chats
+        .where('room','==',this.room)
+        .orderBy('created_at')
+        .onSnapShot(snapshot => {
+            snapshot.docChanges().forEach(change => {
+                const doc = change.doc();
+                if (change.type === 'added') {
+                    // console.log(doc.dat());
+                    clbkfn(doc.data())
+                }
+            })
+        })
     }
 }
