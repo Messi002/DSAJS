@@ -5,6 +5,9 @@ class ChatUI{
     constructor(list){
         this.list = list;
     }
+    clear(){
+        this.list.innerHTML = '';
+    }
     render(data){
         const html = `
         <li class='list-group-item'>
