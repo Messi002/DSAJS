@@ -10,13 +10,3 @@
 // spread syntax Array
 // const people = ['shaun','Gareth','Lareth'];
 // console.log(...people);
-
-//spread syntax Objects
-// const person = {
-//     name: "Austin",
-//     color: "red",
-// }
-
-// const personClone = {...person}
-// personClone.color = 'blue'
-// console.log(personClone);
