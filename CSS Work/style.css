@@ -114,11 +114,12 @@ margin-bottom: 35px;
     text-decoration: none;
     display: inline-block;
     border-radius: 100px;
+    position: relative;
     transition: all 0.2s;
 }
 .btn:hover{
     transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 .btn:active{
     transform: translateY(-1px);
@@ -128,4 +129,22 @@ margin-bottom: 35px;
 .btn-white{
     background-color: #fff;
     color: #777;
+}
+.btn::after{
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+    position:absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.btn-white::after{
+    background-color: #fff;
+}
+
+.btn.btn:hover::after{
+    transform: scale(2);
 }
