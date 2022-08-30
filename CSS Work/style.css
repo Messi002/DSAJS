@@ -51,6 +51,8 @@ body{
 
 .heading-primary{
 color: #fff;
+backface-visibility: hidden;
+-webkit-backface-visibility: hidden;
 }
 
 .heading-primary-main{
@@ -60,8 +62,7 @@ color: #fff;
  letter-spacing: 35px;
  animation-name: moveInTop;
  animation-duration: 2s;
- animation-delay: 3s;
- animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+ animation-delay: 1.5s;
 }
 .heading-primary-sub{
     display: block;
@@ -69,6 +70,9 @@ color: #fff;
     font-size: 20px;
     text-align: center;
     letter-spacing: 20px;
+    animation-name: moveInBottom;
+ animation-duration: 2s;
+ animation-delay: 1.5s;
 }
 
 @keyframes moveInTop{
@@ -79,6 +83,21 @@ color: #fff;
     80%{
         
         transform: translateY(15px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInBottom{
+    0%{
+        opacity: 0;
+        transform: translateY(60px);
+    }
+    80%{
+        
+        transform: translateY(-15px);
     }
     100%{
         opacity: 1;
