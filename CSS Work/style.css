@@ -118,11 +118,11 @@ margin-bottom: 35px;
 }
 .btn:hover{
     transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba((0), 0, 0, 0.2);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 }
 .btn:active{
     transform: translateY(-1px);
-    box-shadow: 0 5px 10px rgba((0), 0, 0, 0.2);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 
 }
 .btn-white{
