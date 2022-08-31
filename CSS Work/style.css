@@ -10,11 +10,14 @@ Dark green = #28b485 */
     padding: 0;
     box-sizing: border-box;
 }
+htmnl{
+    font-size: 10px;
+}
 
 body{
     font-family: "Lato", sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    /* font-size: 16px; */
     line-height: 1.7;
     color: #777;
     padding: 30px;
@@ -34,12 +37,12 @@ body{
 
 .logo-box{
     position: absolute;
-    top: 40px;
-    left: 40px;
+    top: 4rem;
+    left: 4rem;
 }
 
 .logo{
-    height: 50px;
+    height: 5rem;
 }
 
 .text-box{
@@ -54,14 +57,14 @@ body{
 color: #fff;
 backface-visibility: hidden;
 -webkit-backface-visibility: hidden;
-margin-bottom: 35px;
+margin-bottom: 3.5rem;
 }
 
 .heading-primary-main{
  display: block;
  font-weight: 400;
- font-size: 60px;
- letter-spacing: 35px;
+ font-size: 6rem;
+ letter-spacing: 3.5rem;
  animation-name: moveInTop;
  animation-duration: 2s;
  animation-delay: 0.8s;
@@ -69,9 +72,9 @@ margin-bottom: 35px;
 .heading-primary-sub{
     display: block;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 2rem;
     /* text-align: center; */
-    letter-spacing: 20px;
+    letter-spacing: 2rem;
     animation-name: moveInBottom;
  animation-duration: 2s;
  animation-delay: 0.8s;
@@ -80,11 +83,11 @@ margin-bottom: 35px;
 @keyframes moveInTop{
     0%{
         opacity: 0;
-        transform: translateY(-60px);
+        transform: translateY(-6rem);
     }
     80%{
         
-        transform: translateY(15px);
+        transform: translateY(1.5rem);
     }
     100%{
         opacity: 1;
@@ -95,11 +98,11 @@ margin-bottom: 35px;
 @keyframes moveInBottom{
     0%{
         opacity: 0;
-        transform: translateY(60px);
+        transform: translateY(6rem);
     }
     80%{
         
-        transform: translateY(-15px);
+        transform: translateY(-1.5rem);
     }
     100%{
         opacity: 1;
@@ -110,22 +113,22 @@ margin-bottom: 35px;
 .btn:link, 
 .btn:visited{
     text-transform: uppercase;
-    padding: 15px 30px;
+    padding: 1.5rem 3rem;
     text-decoration: none;
     display: inline-block;
-    border-radius: 100px;
+    border-radius: 10rem;
     position: relative;
     transition: all 0.2s ease-out;
    
 
 }
 .btn:hover{
-    transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 .btn:active{
-    transform: translateY(-1px);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-0.1rem);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 
 }
 .btn-white{
@@ -154,7 +157,7 @@ margin-bottom: 35px;
 }
 @keyframes moveInButton{
     0%{
-        transform: translateY(60px);
+        transform: translateY(6rem);
         opacity: 0;
     }
     100%{
