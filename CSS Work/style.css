@@ -116,8 +116,7 @@ margin-bottom: 35px;
     border-radius: 100px;
     position: relative;
     transition: all 0.2s;
-    animation: moveInButton 2s;
-    animation-delay: 1.5s;
+   
 
 }
 .btn:hover{
@@ -143,7 +142,7 @@ margin-bottom: 35px;
     top: 0;
     left: 0;
     z-index: -1;
-    transition: all .4s;
+    transition: all .4s ease-out;
 }
 .btn-white::after{
     background-color: #fff;
@@ -162,4 +161,10 @@ margin-bottom: 35px;
         transform: translateY(0);
         opacity: 1;
     }
+}
+
+.btn-animation{
+    animation: moveInButton 2s;
+    animation-delay: 1.5s;
+    animation-timing-function: ease-out;
 }
