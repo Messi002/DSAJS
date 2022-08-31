@@ -37,12 +37,12 @@ body{
 
 .logo-box{
     position: absolute;
-    top: 4rem;
-    left: 4rem;
+    top: 2rem;
+    left: 2rem;
 }
 
 .logo{
-    height: 5rem;
+    height: 3rem;
 }
 
 .text-box{
@@ -63,8 +63,8 @@ margin-bottom: 3.5rem;
 .heading-primary-main{
  display: block;
  font-weight: 400;
- font-size: 6rem;
- letter-spacing: 3.5rem;
+ font-size: 4.5rem;
+ letter-spacing: 3rem;
  animation-name: moveInTop;
  animation-duration: 2s;
  animation-delay: 0.8s;
@@ -72,9 +72,9 @@ margin-bottom: 3.5rem;
 .heading-primary-sub{
     display: block;
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 1.4rem;
     /* text-align: center; */
-    letter-spacing: 2rem;
+    letter-spacing: 1.8rem;
     animation-name: moveInBottom;
  animation-duration: 2s;
  animation-delay: 0.8s;
