@@ -116,6 +116,9 @@ margin-bottom: 35px;
     border-radius: 100px;
     position: relative;
     transition: all 0.2s;
+    animation: moveInButton 2s;
+    animation-delay: 1.5s;
+
 }
 .btn:hover{
     transform: translateY(-3px);
@@ -140,11 +143,23 @@ margin-bottom: 35px;
     top: 0;
     left: 0;
     z-index: -1;
+    transition: all .4s;
 }
 .btn-white::after{
     background-color: #fff;
 }
 
 .btn.btn:hover::after{
-    transform: scale(2);
+    transform: scaleX(2) scaleY(1.6);
+    opacity: 0;
+}
+@keyframes moveInButton{
+    0%{
+        transform: translateY(60px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
