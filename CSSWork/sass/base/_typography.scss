@@ -1,0 +1,26 @@
+.heading-primary{
+    color: #fff;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    margin-bottom: 3.5rem;
+    }
+    
+    .heading-primary--main{
+     display: block;
+     font-weight: 400;
+     font-size: 6rem;
+     letter-spacing: 3.5rem;
+     animation-name: moveInTop;
+     animation-duration: 2s;
+     animation-delay: 0.8s;
+    }
+    .heading-primary--sub{
+        display: block;
+        font-weight: 700;
+        font-size: 2rem;
+        /* text-align: center; */
+        letter-spacing: 2rem;
+        animation-name: moveInBottom;
+     animation-duration: 2s;
+     animation-delay: 0.8s;
+    }
