@@ -41,3 +41,16 @@
         text-shadow: .5rem 1rem 2rem rgba($color:$color-black, $alpha: .3);
     }
 }
+
+.heading-tertiary{
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.paragraph{
+    font-size: 1.6rem;
+    &:not(:last-child){
+        margin-bottom: 3rem;
+    }
+}
