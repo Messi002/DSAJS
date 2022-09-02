@@ -2,10 +2,13 @@
     max-width: $grid-width;
     background-color: rgb(180, 172, 172);
     margin: 0 auto;
-    margin-bottom: $gutter-vertical;
 
-    &:last-child{
-        margin-bottom: 0;
+    &:not(last-child){
+        margin-bottom: $gutter-vertical;
+    }
+
+    .col-1-of-2{
+         width: ;
     }
 
 }
