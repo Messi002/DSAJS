@@ -191,4 +191,10 @@ body {
   text-align: center;
 }
 
+.row {
+  max-width: 114rem;
+  background-color: #eee;
+  margin: 0 auto;
+}
+
 /*# sourceMappingURL=style.css.map */
