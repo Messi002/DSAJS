@@ -193,8 +193,12 @@ body {
 
 .row {
   max-width: 114rem;
-  background-color: #eee;
+  background-color: rgb(180, 172, 172);
   margin: 0 auto;
+  margin-bottom: 8rem;
+}
+.row:last-child {
+  margin-bottom: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
