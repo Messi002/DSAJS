@@ -41,7 +41,7 @@
     background-color: #fff;
 }
 
-.btn.btn:hover::after{
+.btn:hover::after{
     transform: scaleX(4) scaleY(3);
     opacity: 0;
 }
@@ -57,20 +57,50 @@
     &:link,
     &:visited{
         text-transform: uppercase;
-        padding: 1.5rem 3rem;
+        padding: .3rem;
         text-decoration: none;
+        border-bottom:1px solid $color-primary-dark;
         display: inline-block;
-        position: relative;
         transition: all 0.2s ease-out;
-        font-size: 1.4rem;
+        font-size: $default-font-size;
+        color: $color-primary-dark;
+        transition: all .2s;
+        position: relative;
     }
 
     &:hover{
+        // background-color:$color-primary-dark;
+        // color:white; 
+
         transform: translateY(-0.3rem);
         box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+
+
+
     }
 
-    &:acitve{
+    &:active{
+        transform: translateY(-0.1rem);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.2);
 
+    }
+
+    &::after{
+        content: "";
+        display: inline-block;
+        height: 100%;
+    width: 100%;
+    position:absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s ease-out;
+    }
+    &:hover::after{
+        animation: moveUPDIV 2s ease-out;
+    }
+
+    @keyframes moveUPDIV{
+        
     }
 }
