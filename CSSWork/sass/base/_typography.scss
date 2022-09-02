@@ -38,5 +38,6 @@
     
     &:hover{
         transform: skewY(2deg) skewX(15deg);
+        text-shadow: .5rem 1rem 2rem rgba($color:$color-black, $alpha: .3);
     }
 }
