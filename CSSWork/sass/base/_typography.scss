@@ -34,4 +34,9 @@
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+    transition: all 0.2s  ease-out;
+    
+    &:hover{
+        transform: skewY(2deg) skewX(15deg);
+    }
 }
