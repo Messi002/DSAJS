@@ -27,33 +27,7 @@ light green =  #7ed56f
 Medium green = #55c57a
 Dark green = #28b485 */
 
-$color-primary:rgba(126,213,111,0.8);
-$color-secondary: rgba(40,180,131,0.8);
 
-*, 
-*::after,
-*::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
-
-}
-
-html{
-      font-size: 62.5%; 
-
-}
-
-body{
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
-    /* font-size: 16px; */
-    line-height: 1.7;
-    color: #777;
-    padding: 3rem;
-    box-sizing: border-box;
-
-}
 
 .header{
     height: 95vh;
@@ -112,35 +86,7 @@ margin-bottom: 3.5rem;
  animation-delay: 0.8s;
 }
 
-@keyframes moveInTop{
-    0%{
-        opacity: 0;
-        transform: translateY(-6rem);
-    }
-    80%{
-        
-        transform: translateY(1.5rem);
-    }
-    100%{
-        opacity: 1;
-        transform: translate(0);
-    }
-}
 
-@keyframes moveInBottom{
-    0%{
-        opacity: 0;
-        transform: translateY(6rem);
-    }
-    80%{
-        
-        transform: translateY(-1.5rem);
-    }
-    100%{
-        opacity: 1;
-        transform: translate(0);
-    }
-}
 
 .btn:link, 
 .btn:visited{
