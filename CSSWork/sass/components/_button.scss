@@ -53,3 +53,24 @@
 }
 
 
+.btn-text{
+    &:link,
+    &:visited{
+        text-transform: uppercase;
+        padding: 1.5rem 3rem;
+        text-decoration: none;
+        display: inline-block;
+        position: relative;
+        transition: all 0.2s ease-out;
+        font-size: 1.4rem;
+    }
+
+    &:hover{
+        transform: translateY(-0.3rem);
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    }
+
+    &:acitve{
+
+    }
+}
