@@ -72,3 +72,15 @@
         opacity: 1;
     }
 }
+
+@keyframes moveUPDIV{
+    0%{
+        height:0;
+    }
+   
+    100%{
+        height:100%;
+        
+        background-color:$color-primary-dark;
+    }
+}
