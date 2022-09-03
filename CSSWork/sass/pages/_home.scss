@@ -3,3 +3,12 @@
     padding: 25rem 0;
     margin-top: -20vh;
 }
+
+.section-features{
+    padding:20rem 0;
+    background-image:linear-gradient(to right bottom,
+    $color-primary,
+    $color-secondary),
+     url('./images/mountains2.jpg');
+    background-size: cover;
+}
