@@ -28,4 +28,7 @@
             z-index: 3;
         }   
     }
+    &:hover &__photo:not(:hove){
+        transform: scale(.8);
+    }
 }
