@@ -222,6 +222,8 @@ body {
   position: relative;
 }
 .btn-text:hover {
+  border-bottom: none;
+  color: white;
   transform: translateY(-0.3rem);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
@@ -241,9 +243,18 @@ body {
   transition: all 0.4s ease-out;
 }
 .btn-text:hover::after {
-  animation: moveUPDIV 2s ease-out;
+  animation: moveUPDIV 0.5s ease-in-out;
+  background-color: #28b485;
 }
-@keyframes moveUPDIV {}
+@keyframes moveUPDIV {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 100%;
+    background-color: #28b485;
+  }
+}
 
 .header {
   height: 95vh;
