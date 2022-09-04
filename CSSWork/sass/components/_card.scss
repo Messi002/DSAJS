@@ -111,13 +111,17 @@
         transform: translate(-50%, -50%);
     }
     &__price-box{
-
+        text-align: center;
+        color: #fff;
+        margin-bottom: 8rem;
     }
 
     &__price-only{
-        
+        font-size: 1.4rem;
+        text-transform: 8rem;
     }
     &__price-value{
-        
+        font-size: 6rem;
+        font-weight: 100;
     }
 }
