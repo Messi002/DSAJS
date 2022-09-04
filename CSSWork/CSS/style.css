@@ -322,7 +322,7 @@ body {
   background-color: orangered;
   color: white;
   height: 50rem;
-  width: 50rem;
+  width: 100%;
   transition: all 0.8s;
   position: absolute;
   top: 0;
@@ -334,14 +334,12 @@ body {
 .card__side--back {
   background-color: green;
   transform: rotateY(180deg);
-  z-index: -1;
 }
 .card:hover .card__side--front {
   transform: rotateY(180deg);
 }
 .card:hover .card__side--back {
   transform: rotateY(0deg);
-  z-index: 1;
 }
 
 .header {

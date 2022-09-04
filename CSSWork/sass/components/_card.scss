@@ -9,11 +9,12 @@
         background-color: orangered;
         color: white;
         height: 50rem;
-        width: 50rem;
+        width: 100%;
         transition: all .8s;
         position: absolute;
         top: 0;
         left: 0;
+
 
         &--front{
         background-color: orangered;
@@ -21,7 +22,7 @@
         &--back{
             background-color: green;
             transform: rotateY(180deg);
-            z-index: -1;
+           
         }
     }
     &:hover &__side--front{
@@ -29,6 +30,6 @@
     }
     &:hover &__side--back{
         transform:rotateY(0deg);
-        z-index: 1;
+       
     }
 }
