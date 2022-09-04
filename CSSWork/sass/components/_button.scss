@@ -25,6 +25,10 @@
     background-color: #fff;
     color: #777;
 }
+.btn--green{
+    background-color: $color-primary-dark;
+    color: #fff;
+}
 .btn::after{
     content: "";
     display: inline-block;

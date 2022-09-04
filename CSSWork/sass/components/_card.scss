@@ -39,13 +39,15 @@
         transform:rotateY(0deg);
        
     }
-
+//FRONT SIDE STYLING
     &__picture{
         background-size: cover;
         height: 23rem; 
         background-blend-mode: screen;
         clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        border-top-left-radius: 10px;
+        border-top-right-radius: 3px;
         &--1{
           
             background-image: linear-gradient(to right bottom,$color-secondary-light,$color-secondary-dark), url(../images/modelwoman.jpg);
