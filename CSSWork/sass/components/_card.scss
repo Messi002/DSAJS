@@ -68,11 +68,19 @@
         top: 12rem;
         right: 2rem;
         text-align: right;
+        width: 75%;
     }
 
     &__heading-span{
-        &-1{
-            background-image: linear-gradient(to right bottom, rgba($color-secondary-light,.85), rgba($color-secondary-dark,.85));
+        padding: 1rem 1.5rem;
+        -webkit-box-decoration-break:clone;
+        box-decoration-break: clone;
+        &--1{
+            background-image: linear-gradient(
+                to right bottom, 
+                rgba($color-secondary-light, .50), 
+                rgba($color-secondary-dark, .50),
+            );
         }
     }
 }
