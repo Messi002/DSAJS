@@ -361,6 +361,12 @@ body {
 .card__picture--3 {
   background-image: url(../images/steak.jpg);
 }
+.card__heading {
+  font-size: 2.8rem;
+  font-weight: 300;
+  color: white;
+  text-transform: white;
+}
 
 .header {
   height: 95vh;
