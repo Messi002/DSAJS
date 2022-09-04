@@ -320,7 +320,6 @@ body {
   height: 50rem;
 }
 .card__side {
-  background-color: orangered;
   color: white;
   height: 50rem;
   width: 100%;
@@ -331,7 +330,7 @@ body {
   backface-visibility: hidden;
 }
 .card__side--front {
-  background-color: orangered;
+  background-color: white;
 }
 .card__side--back {
   background-color: green;
