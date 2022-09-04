@@ -316,12 +316,17 @@ body {
   -moz-perspective: 150rem;
   -webkit-perspective: 150rem;
   font-size: 5rem;
+  position: relative;
 }
 .card__side {
   background-color: orangered;
   color: white;
   height: 50rem;
+  width: 50rem;
   transition: all 0.8s;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .card__side--front {
   background-color: orangered;
@@ -329,12 +334,14 @@ body {
 .card__side--back {
   background-color: green;
   transform: rotateY(180deg);
+  z-index: -1;
 }
 .card:hover .card__side--front {
   transform: rotateY(180deg);
 }
 .card:hover .card__side--back {
   transform: rotateY(0deg);
+  z-index: 1;
 }
 
 .header {
