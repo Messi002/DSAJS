@@ -64,5 +64,15 @@
         font-weight: 300;
         color: white;
         text-transform: white;
+        position: absolute;
+        top: 12rem;
+        right: 2rem;
+        text-align: right;
+    }
+
+    &__heading-span{
+        &-1{
+            background-image: linear-gradient(to right bottom, rgba($color-secondary-light,.85), rgba($color-secondary-dark,.85));
+        }
     }
 }
