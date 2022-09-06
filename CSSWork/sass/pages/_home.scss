@@ -32,3 +32,14 @@
 
 
 }
+
+.section-book{
+    padding: 15rem 0;
+    background-image: linear-gradient(to right bottom, $color-primary-light,$color-primary-dark);
+}
+
+.book{
+    background-image: url('./images/steak.jpg');
+    background-size: cover;
+    height: 50rem;
+}

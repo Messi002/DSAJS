@@ -568,4 +568,15 @@ body {
   background-color: rgba(247, 247, 247, 0.968627451);
 }
 
+.section-book {
+  padding: 15rem 0;
+  background-image: linear-gradient(to right bottom, #55c57a, #28b485);
+}
+
+.book {
+  background-image: url("./images/steak.jpg");
+  background-size: cover;
+  height: 50rem;
+}
+
 /*# sourceMappingURL=style.css.map */
