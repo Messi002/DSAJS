@@ -31,36 +31,6 @@
 
 
 
-@keyframes moveInTop{
-    0%{
-        opacity: 0;
-        transform: translateY(-6rem);
-    }
-    80%{
-        
-        transform: translateY(1.5rem);
-    }
-    100%{
-        opacity: 1;
-        transform: translate(0);
-    }
-}
-
-@keyframes moveInBottom{
-    0%{
-        opacity: 0;
-        transform: translateY(6rem);
-    }
-    80%{
-        
-        transform: translateY(-1.5rem);
-    }
-    100%{
-        opacity: 1;
-        transform: translate(0);
-    }
-}
-
 
 @keyframes moveInButton{
     0%{
@@ -82,5 +52,21 @@
         height:100%;
         
         background-color:$color-primary-dark;
+    }
+}
+
+@keyframes moveInText{
+    0%{
+        opacity:0;
+        
+        
+    }
+   50%{
+    transform: translate(-50%, -25%);
+    
+   }
+    100%{
+        opacity:1 ;
+        transform: translate(-50%, -50%);
     }
 }
