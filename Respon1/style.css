@@ -222,7 +222,34 @@ footer a{
 @media screen and (max-width: 480px) {
     #featured li{
         width: 92%;
+        margin: 20px 5%;
     
     }
+    .burger-nav{
+        display: block;
+        height: 40px;
+        width: 100%;
+        background:url('./images/logo.png') no-repeat;
+    }
+    footer ul{
+        width: 98%;
+        text-align: center;
+    }
+
+    #home-menu li{
+        float:none;
+        width: 96%;
+        margin: 20px 2% !important;
+
+    }
+
+    #main-banner img{
+        width: 180%;
+        position: relative;
+        left: -40%;
+    }
+    
+
+
 }
 
