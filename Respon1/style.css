@@ -193,11 +193,4 @@ footer a{
     }
 }
 
-/* mobile */
-@media screen and (max-width: 480px) {
-    #featured li{
-        width: 92%;
-    
-    }
-}
 
