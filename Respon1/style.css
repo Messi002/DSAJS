@@ -246,9 +246,9 @@ footer a{
     header nav ul.open{
         height: auto;
     }
-    header nav ul.open{
+    header nav ul li{
         float: none;
-        text-align: left;
+        text-align: center;
         width: 100%;
     }
     footer ul{
