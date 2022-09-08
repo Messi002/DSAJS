@@ -208,9 +208,13 @@ footer a{
         padding: 0;
         text-align: center;
     }
-
+    #featured li{
+        width: 40%;
+    
+    }
     footer ul{
-        
+        width: 48%;
+        text-align: center;
     }
 }
 
