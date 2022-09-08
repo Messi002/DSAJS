@@ -229,8 +229,27 @@ footer a{
         display: block;
         height: 40px;
         width: 100%;
-        background:url('./images/white-logo.png') no-repeat  center;
+        background:url('./images/white-logo.png') no-repeat 98% center;
         background-color: #3b3b3b;
+        cursor: pointer;
+    }
+
+    header .wrapper{
+        width: 100%;
+        padding: 0;
+    }
+    header nav ul{
+        overflow: hidden;
+        background-color: #999;
+        /* //height:0; */
+    }
+    header nav ul.open{
+        height: auto;
+    }
+    header nav ul.open{
+        float: none;
+        text-align: left;
+        width: 100%;
     }
     footer ul{
         width: 98%;
