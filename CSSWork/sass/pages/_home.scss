@@ -39,7 +39,17 @@
 }
 
 .book{
-    background-image: url('./images/steak.jpg');
+    background-image:linear-gradient(105deg,
+    rgba(#fff,.9) 0%,
+    rgba(#fff,.9) 50%,
+    transparent 50%), url('../images/croissant.jpg');
     background-size: cover;
+    border-radius: 3px;
     height: 50rem;
+    box-shadow: 0 1.5rem 4rem rgba($color: #000000, $alpha: .2);
+
+    &__form{
+        width: 50%;
+        padding: 6rem;
+    }
 }

@@ -12,10 +12,14 @@
 @import 'components/feature-box';
 @import 'components/card';
 @import 'components/stroy';
+@import 'components/form';
+@import 'components/popup';
 @import 'components/bg-video';
 
+@import 'layout/navigation'; 
 @import 'layout/header'; 
 @import 'layout/grid';
+@import 'layout/footer';
 
 @import 'pages/home';
 

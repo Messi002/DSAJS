@@ -1,5 +1,5 @@
 
-.btn:link, 
+.btn,.btn:link, 
 .btn:visited{
     text-transform: uppercase;
     padding: 1.5rem 3rem;
@@ -10,13 +10,16 @@
     transition: all 0.2s ease-out;
     font-size: 1.4rem;
    
-
+    //styles for button 
+    border: none;
+    cursor: pointer;
 }
 .btn:hover{
     transform: translateY(-0.3rem);
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
-.btn:active{
+.btn:active, .btn:focus{
+    outline: none;
     transform: translateY(-0.1rem);
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.2);
 
