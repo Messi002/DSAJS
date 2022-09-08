@@ -229,7 +229,8 @@ footer a{
         display: block;
         height: 40px;
         width: 100%;
-        background:url('./images/logo.png') no-repeat;
+        background:url('./images/white-logo.png') no-repeat  center;
+        background-color: #3b3b3b;
     }
     footer ul{
         width: 98%;
