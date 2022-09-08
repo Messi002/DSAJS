@@ -187,9 +187,25 @@ footer a{
 
 /* tablets */
 @media screen and (max-width: 768px) {
-    #featured li{
-        width: 46%;
-    
+    header nav{
+        float: none;
+        clear: left;
+        width: 100%;
+    }
+
+    header nav ul{
+        margin: 0;
+        padding: 0;
+    }
+    h1.logo{
+        margin: 10px 0;
+        float: none;
+    }
+
+    header nav ul li{
+        margin: 10px 0;
+        width: 20%;
+        padding: 0;
     }
 }
 
