@@ -9,6 +9,11 @@
             
         }
     }
+
+    @include respond(tab-port){
+        max-width: 50rem;
+        
+    }
     @include clearfix;
     [class^="col-"]{
         float: left;
@@ -16,6 +21,9 @@
            margin-right: $gutter-horizontal;
            @include respond(tab-port){
             margin-right: 0;
+            margin-bottom: $gutter-vertical-small;
+
+
         }
         }
         @include respond(tab-port){
