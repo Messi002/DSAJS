@@ -14,7 +14,14 @@ html{
       }
 
       @include respond(phone){
-        font-size: 15%;
+        font-size: 50%;
+      }
+      @include respond(phone){
+        font-size: 60%;
+      } @include respond(phone){
+        font-size: 70%;
+      } @include respond(phone){
+        font-size: 80%;
       }
 
 }
