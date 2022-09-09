@@ -251,6 +251,13 @@ footer a{
         text-align: center;
         width: 100%;
     }
+
+    header nav ul li a{
+       border-bottom: 1px solid #eee;
+       display: block;
+       color: #fff;
+       
+    }
     footer ul{
         width: 98%;
         text-align: center;
