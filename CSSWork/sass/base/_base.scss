@@ -9,21 +9,29 @@
 
 html{
       font-size: 62.5%; 
- 
-
-   
-    } @include respond(tab-land){
+      @include respond(tab-land){
         font-size: 56.25%;
+        
       }
-      
+
+
       @include respond(tab-port){
         //1 rem = 8px, 8/16 = 50%
         font-size: 60%;
- @include respond(big-desk){
+    
+    }
+        
+
+      @include respond(big-desk){
         font-size: 75%;
+
       }
 
-}
+   
+    } 
+
+     
+
 
 body{
     font-family: "Lato", sans-serif;
