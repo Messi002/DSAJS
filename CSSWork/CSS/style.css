@@ -529,7 +529,7 @@ body {
 .card:hover .card__side--front {
   transform: rotateY(0deg);
 }
-.card:hover .card__side--back {
+.card__side--back {
   transform: rotateY(0deg);
 }
 .card__cta {

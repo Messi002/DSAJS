@@ -147,10 +147,10 @@
             }
         }
         &:hover &__side--front{
-            transform:rotateY(0deg);
+            transform:rotateY(0deg) ;
         }
-        &:hover &__side--back{
-            transform:rotateY(0deg);
+        &__side--back{
+            transform:rotateY(0deg) ;
            
         }
     
