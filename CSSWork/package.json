@@ -4,7 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile:sass" : "sass sass/main.scss  CSS/style.css -w"
+    "compile:sass" : "sass sass/main.scss  CSS/style.css -w",
+    "concat:css":"concat -o CSS/style.concat.css CSS/style.comp.css",
+    "prefix:css":"postcss --use autoprefixer -b 'last 10 versions' CSS/style.concat.css -o CSS/style.prefix.css",
+    "compress:css":"sass CSS/style.prefix.css CSS/style.css --output-style compressed",
+    "build:css":"npm-run-all compile:sass concat:css prefix:css compress:css"
+
   },
   "keywords": [],
   "author": "",
