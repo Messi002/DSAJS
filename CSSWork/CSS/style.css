@@ -536,6 +536,9 @@ body {
 .card__side--back {
   transform: rotateY(0deg);
 }
+.card__details {
+  padding: 1rem 3rem;
+}
 .card__cta {
   position: relative;
   top: 0%;
