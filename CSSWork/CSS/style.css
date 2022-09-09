@@ -71,6 +71,11 @@ html {
     font-size: 50%;
   }
 }
+@media (max-width: 600px) {
+  html {
+    font-size: 15%;
+  }
+}
 
 body {
   font-family: "Lato", sans-serif;
