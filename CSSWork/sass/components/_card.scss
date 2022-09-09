@@ -133,16 +133,23 @@
 
     @include respond(tab-port){
         height: auto;
+        border-radius: 3px;
+        background-color: white;
+        box-shadow: 0 1.5rem 4rem rgba($color: #000000, $alpha: .15);
+
+
+
     
         &__side{
             height: auto;
             position: relative;
-            border-radius: 3px;
+            box-shadow:none;
            
                                       
             }
             &--back{
                 transform: rotateY(0deg);
+                clip-path: polygon(0 15%, 100% 0, 100% 100%,0 100%);
                
             }
         }
@@ -162,9 +169,10 @@
             left: 0%;
             transform: translate(0);
             width: 100%;
+            padding: 7rem 4rem 4rem 4rem;
         }
         &__price-box{
-            margin-bottom: 8rem;
+            margin-bottom: 3rem;
         }
     
         &__price-value{
