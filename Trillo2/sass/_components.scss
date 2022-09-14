@@ -14,8 +14,10 @@
 
     }
     &__icon{
-        height: 2rem;
-        width: 2rem;
+        height: 1rem;
+        background-color: red;
+      
+        
     }
 }
 
@@ -27,6 +29,8 @@
     }
     &__icon{
 
+        height: 2.75rem;
+        width: 2.75rem;
     }
     &__notification{
 

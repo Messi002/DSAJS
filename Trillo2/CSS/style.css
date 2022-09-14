@@ -44,10 +44,14 @@ body {
 }
 
 .search__icon {
-  height: 2rem;
-  width: 2rem;
+  height: 1rem;
+  background-color: red;
 }
 
+.user-nav__icon {
+  height: 2.75rem;
+  width: 2.75rem;
+}
 .user-nav__user-photo {
   height: 3.75rem;
   width: 3.75rem;
