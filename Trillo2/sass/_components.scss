@@ -88,9 +88,14 @@
 
         height: 2.75rem;
         width: 2.75rem;
+        fill: var(--color-grey-dark-2);
     }
     &__notification{
-
+        font-size:.8 ;
+        height: 1.75rem;
+        width: 1.75rem;
+        border-radius: 50%;
+        
     }
     &__user{
 
