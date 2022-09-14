@@ -1,7 +1,9 @@
 {
-  "name": "trilloproject",
+  "devDependencies": {
+    "sass": "^1.54.9"
+  },
+  "name": "trillo2",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "dependencies": {
     "anymatch": "^3.1.2",
@@ -21,19 +23,16 @@
     "source-map-js": "^1.0.2",
     "to-regex-range": "^5.0.1"
   },
-  "devDependencies": {
-    "sass": "^1.54.9"
-  },
   "scripts": {
     "watch:sass": "sass sass/main.scss CSS/style.css -w",
         
-    "compile:sass": "sass sass/main.scss css/style.comp.css",
-    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.comp.css -o css/style.prefix.css",
-    "compress:css": "sass css/style.prefix.css css/style.css --output-style compressed",
+    "compile:sass": "sass sass/main.scss CSS/style.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' CSS/style.comp.css -o CSS/style.prefix.css",
+    "compress:css": "sass CSS/style.prefix.css CSS/style.css --output-style compressed",
     "build:css": "npm-run-all compile:sass  prefix:css compress:css"
-  },
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "description": ""
 }
