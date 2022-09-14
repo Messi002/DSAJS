@@ -63,6 +63,19 @@
 //USER NAVIGATION
 .user-nav{
     background-color: greenyellow;
+    display: flex;
+    align-items: center;
+    &__icon-box{
+
+    }
+& > *{
+    padding: 0 2rem;
+    cursor: pointer;
+
+}
+& > *:over{
+
+}
     &__icon-box{
 
     }

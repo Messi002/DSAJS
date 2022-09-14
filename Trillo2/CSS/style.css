@@ -92,6 +92,12 @@ body {
 
 .user-nav {
   background-color: greenyellow;
+  display: flex;
+  align-items: center;
+}
+.user-nav > * {
+  padding: 0 2rem;
+  cursor: pointer;
 }
 .user-nav__icon {
   height: 2.75rem;
