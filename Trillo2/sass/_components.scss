@@ -25,13 +25,23 @@
             width: 100%;
             background-color: var(--color-grey-light-3);
         }
+        &:active{
+            transform: translateY(2px);
+        }
 
     }
     &__button{
+        border: none;
+        background-color:var(--color-grey-light-2) ;
+        &:focus{
+            outline: none;
+        }
+
 
     }
     &__icon{
-        height: 1rem;
+        height: 2rem;
+        width: 2rem;
       
         
     }

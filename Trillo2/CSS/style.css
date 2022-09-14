@@ -64,8 +64,19 @@ body {
   width: 100%;
   background-color: var(--color-grey-light-3);
 }
+.search__input:active {
+  transform: translateY(2px);
+}
+.search__button {
+  border: none;
+  background-color: var(--color-grey-light-2);
+}
+.search__button:focus {
+  outline: none;
+}
 .search__icon {
-  height: 1rem;
+  height: 2rem;
+  width: 2rem;
 }
 
 .user-nav {
