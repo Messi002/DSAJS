@@ -56,6 +56,12 @@ body {
   color: inherit;
   padding: 0.7rem 2rem;
   border-radius: 100px;
+  width: 90%;
+}
+.search__input:focus {
+  outline: none;
+  width: 100%;
+  background-color: var(--color-grey-light-3);
 }
 .search__icon {
   height: 1rem;

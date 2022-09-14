@@ -18,6 +18,12 @@
         color: inherit;
         padding: .7rem 2rem ;
         border-radius: 100px;
+        width: 90%;
+        &:focus{
+            outline: none;
+            width: 100%;
+            background-color: var(--color-grey-light-3);
+        }
 
     }
     &__button{
