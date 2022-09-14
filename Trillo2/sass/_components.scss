@@ -2,13 +2,22 @@
 //logo
 .logo{
     height: 3.25rem;
+    margin-left: 3rem;
 }
 
 ///////////////////////////
 //SEARCH
 .search{
     background-color: orangered;
+    flex: 0 0 40%;
     &__input{
+        font-family: inherit;
+        font-size: inherit;
+        background-color: var(--color-grey-light-2);
+        border: none;
+        color: inherit;
+        padding: .7rem 2rem ;
+        border-radius: 100px;
 
     }
     &__button{
