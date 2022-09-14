@@ -43,11 +43,16 @@ body {
   height: 3.25rem;
 }
 
+.search {
+  background-color: orangered;
+}
 .search__icon {
   height: 1rem;
-  background-color: red;
 }
 
+.user-nav {
+  background-color: greenyellow;
+}
 .user-nav__icon {
   height: 2.75rem;
   width: 2.75rem;
@@ -69,6 +74,8 @@ body {
   height: 7rem;
   background-color: #fff;
   border-bottom: var(--color-grey-light-1);
+  display: flex;
+  justify-content: space-between;
 }
 
 .content {

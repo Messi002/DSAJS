@@ -10,6 +10,8 @@ min-height: 50rem;
     height: 7rem;
     background-color: #fff;
     border-bottom: var(--color-grey-light-1);
+    display: flex;
+    justify-content: space-between;
 
 }
 .content{
