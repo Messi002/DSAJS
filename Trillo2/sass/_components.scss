@@ -398,16 +398,17 @@
     margin: 3.5rem;
 
     &__text{
-
+        margin-bottom: 1.5rem;
     }
 
     &__user{
-
+        display: flex;
     }
     &__photo{
         height: 4.5rem;
         width: 4.5rem;
         border-radius: 50%;
+        box-sizing: content-box;
     }
 
     &__user-box{
