@@ -234,14 +234,32 @@
         display: flex;
         align-items: center ;
     }
+    &__location-icon{
+        margin-right: .5rem;
+    }
     &__rating{
+        background-color: var(--color-primary);
+        color: white;
+        margin-left: 1.5rem;
+        padding: 0 2rem;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-self: stretch;
+
+        
 
     }
     &__rating-average{
-
+        font-size: 2.25rem;
+        font-weight: 300;
     }
 
     &__rating-count{
+        font-size: .8rem;
+        text-transform: uppercase;
 
     }
 }
