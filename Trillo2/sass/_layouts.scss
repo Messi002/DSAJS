@@ -45,14 +45,16 @@ min-height: 50rem;
 }
 
 .description{
-background-color: orangered;
+background-color: #fff;
 flex: 0 0 60%;
+box-shadow: var(--shadow-light);
 margin-right: 4.5rem;
+padding: 3rem;
 
 }
 
 .user-reviews{
 
 background-color: green;
-flex:1;
+flex: 1;
 }
