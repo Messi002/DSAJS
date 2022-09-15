@@ -35,7 +35,8 @@ min-height: 50rem;
 
 .detail{
  display: flex;
- padding: 4.5rem;
+ align-items: center;
+ padding: 0 4.5rem;
  background-color: var(--color-grey-light-1);
  border-bottom: var(--line) ;
  font-size: 1.4rem;

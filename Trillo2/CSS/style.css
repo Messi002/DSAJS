@@ -332,13 +332,14 @@ body {
   background-color: #fff;
   box-shadow: var(--shadow-light);
   padding: 3rem;
-  margin: 3.5rem;
+  margin: 3rem;
 }
 .review__text {
   margin-bottom: 1.5rem;
 }
 .review__user {
   display: flex;
+  align-items: center;
 }
 .review__photo {
   height: 4.5rem;
@@ -346,6 +347,24 @@ body {
   border-radius: 50%;
   box-sizing: content-box;
 }
+.review__user-box {
+  margin-right: auto;
+  margin-left: 1rem;
+}
+.review__user-name {
+  font-size: 1.3rem;
+  letter-spacing: 0.9px;
+  font-weight: bold;
+  margin-bottom: -3px;
+}
+.review__user-date {
+  font-size: 1rem;
+}
+.review__rating {
+  color: var(--color-primary);
+  font-size: 2rem;
+}
+
 .container {
   max-width: 120rem;
   margin: 8rem auto;
@@ -383,7 +402,8 @@ body {
 
 .detail {
   display: flex;
-  padding: 4.5rem;
+  align-items: center;
+  padding: 0 4.5rem;
   background-color: var(--color-grey-light-1);
   border-bottom: var(--line);
   font-size: 1.4rem;

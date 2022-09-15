@@ -395,7 +395,7 @@
     background-color: #fff;
     box-shadow: var(--shadow-light);
     padding: 3rem;
-    margin: 3.5rem;
+    margin: 3rem;
 
     &__text{
         margin-bottom: 1.5rem;
@@ -403,6 +403,8 @@
 
     &__user{
         display: flex;
+        align-items: center;
+
     }
     &__photo{
         height: 4.5rem;
@@ -412,17 +414,23 @@
     }
 
     &__user-box{
-
+        margin-right: auto;
+        margin-left: 1rem;
     }
 
     &__user-name{
-
+        font-size: 1.3rem;
+        letter-spacing: .9px;
+        font-weight: bold;
+        margin-bottom: -3px;
     }
 
     &__user-date{
-        
+        font-size: 1rem;
+
     }
     &__rating{
-
+        color: var(--color-primary);
+        font-size: 2rem;
     }
 }
