@@ -208,18 +208,23 @@
 ///////////////////////////
 //  OVERVIEW
 .overview{
+    display: flex;
+    border-bottom: 1px solid var(--color-grey-light-1);
+
     &__heading{
 
     }
     &__stars{
-
+        margin-right: auto;
     }
     &__star-icon, 
     &__location-icon{
-
+        width: 1.75rem;
+        height: 1.75rem;
+        fill:var(--color-primary) ;
     }
     &__location{
-
+        // flex: 1;
     }
     &__rating{
 
@@ -229,6 +234,6 @@
     }
 
     &__rating-count{
-        
+
     }
 }

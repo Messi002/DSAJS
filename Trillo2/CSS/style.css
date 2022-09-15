@@ -194,6 +194,18 @@ body {
   display: block;
 }
 
+.overview {
+  display: flex;
+  border-bottom: 1px solid var(--color-grey-light-1);
+}
+.overview__stars {
+  margin-right: auto;
+}
+.overview__star-icon, .overview__location-icon {
+  width: 1.75rem;
+  height: 1.75rem;
+  fill: var(--color-primary);
+}
 .container {
   max-width: 120rem;
   margin: 8rem auto;
@@ -205,7 +217,7 @@ body {
 .header {
   height: 7rem;
   background-color: #fff;
-  border-bottom: var(--color-grey-light-1);
+  border-bottom: 1px solid var(--color-grey-light-1);
   display: flex;
   justify-content: space-between;
   align-items: center;
