@@ -149,7 +149,7 @@
     }
 
     &__item:hover::before, 
-    &__item--active:active{
+    &__item--active::before{
         transform: scaleY(1);
         width: 100%;
     }
