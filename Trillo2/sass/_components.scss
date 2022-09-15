@@ -128,6 +128,10 @@
     &__item{
         position: relative;
 
+        &:not(:last-child){
+            margin-bottom: .5rem;
+        }
+
     }
 
     &__item::before{
@@ -138,6 +142,11 @@
         height: 100%;
         width: 3px;
         background-color: var(--color-primary);
+        transform: scaleY(0);
+    }
+
+    &__item:hover::before{
+        transform: scaleY(1);
     }
     
     &__link:link,
