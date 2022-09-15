@@ -30,7 +30,7 @@
         }
       &::-webkit-input-placeholder{
         font-weight: 100;
-        color: var(--color-grey-light-3);
+        color: var(--color-grey-dark-3);
       }
 
     }
@@ -100,8 +100,8 @@
         top: 1.5rem;
         right: 1.1rem;
         display: flex;
-        justify-content: center;
-        align-items: center;
+         justify-content: center;
+         align-items: center;
 
     }
     &__user{

@@ -69,7 +69,7 @@ body {
 }
 .search__input::-webkit-input-placeholder {
   font-weight: 100;
-  color: var(--color-grey-light-3);
+  color: var(--color-grey-dark-3);
 }
 .search__input:focus + .search__button {
   background-color: var(--color-grey-light-2);
