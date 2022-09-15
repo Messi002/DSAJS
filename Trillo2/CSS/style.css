@@ -328,6 +328,17 @@ body {
   margin-right: -1.5rem;
 }
 
+.review {
+  background-color: #fff;
+  box-shadow: var(--shadow-light);
+  padding: 3rem;
+  margin: 3.5rem;
+}
+.review__photo {
+  height: 4.5rem;
+  width: 4.5rem;
+  border-radius: 50%;
+}
 .container {
   max-width: 120rem;
   margin: 8rem auto;
@@ -368,6 +379,7 @@ body {
   padding: 4.5rem;
   background-color: var(--color-grey-light-1);
   border-bottom: var(--line);
+  font-size: 1.4rem;
 }
 
 .description {
@@ -377,10 +389,10 @@ body {
   margin-right: 4.5rem;
   padding: 3rem;
   font-size: 1.4rem;
+  height: fit-content;
 }
 
 .user-reviews {
-  background-color: green;
   flex: 1;
 }
 

@@ -38,6 +38,7 @@ min-height: 50rem;
  padding: 4.5rem;
  background-color: var(--color-grey-light-1);
  border-bottom: var(--line) ;
+ font-size: 1.4rem;
 
 }
 
@@ -48,11 +49,11 @@ box-shadow: var(--shadow-light);
 margin-right: 4.5rem;
 padding: 3rem;
 font-size: 1.4rem;
+height: fit-content;
 
 }
 
 .user-reviews{
 
-background-color: green;
 flex: 1;
 }
