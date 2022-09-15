@@ -295,6 +295,18 @@ body {
   flex: 0 0 50%;
   margin-bottom: 0.7rem;
 }
+.list__item::before {
+  content: "";
+  display: inline-block;
+  height: 2rem;
+  width: 2rem;
+  margin-right: 2rem;
+  background-color: var(--color-primary);
+  mask-image: url(../img/workshop.jpg);
+  mask-size: cover;
+  -webkit-mask-image: url(../img/workshop.jpg);
+  -webkit-mask-size: cover;
+}
 
 .container {
   max-width: 120rem;

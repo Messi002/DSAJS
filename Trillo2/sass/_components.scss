@@ -331,6 +331,27 @@
         flex: 0 0 50%;
         margin-bottom:.7rem;
     }
+    //taking from svg folder
+
+    &__item::before{
+        content: "";
+        display: inline-block;
+        height: 2rem;
+        width: 2rem;
+        margin-right: 2rem;
+
+        //older browser
+        // background-image: url(../img/workshop.jpg);
+        // background-size: cover;
+
+
+        //Newer browser - masks
+        background-color: var(--color-primary);
+        mask-image: url(../img/workshop.jpg);
+        mask-size: cover;
+        -webkit-mask-image:url(../img/workshop.jpg);
+        -webkit-mask-size:cover;
+    }
 }
 
 ///////////////////////////
