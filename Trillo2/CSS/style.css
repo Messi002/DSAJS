@@ -338,6 +338,7 @@ body {
 }
 .review__text {
   margin-bottom: 1.5rem;
+  z-index: 190;
 }
 .review__user {
   display: flex;
@@ -371,12 +372,13 @@ body {
 .review::before {
   content: "“";
   position: absolute;
-  top: 0;
+  top: 7.5rem;
   left: 0;
   font-size: 20rem;
   line-height: 1rem;
   color: var(--color-grey-light-2);
   font-family: sans-serif;
+  z-index: 1;
 }
 
 .container {
