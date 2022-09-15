@@ -137,16 +137,32 @@ body {
   list-style: none;
   margin-top: 3.5rem;
 }
+.side-nav__item {
+  position: relative;
+}
+.side-nav__item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 3px;
+  background-color: var(--color-primary);
+}
 .side-nav__link:link, .side-nav__link:visited {
   color: var(--color-grey-light-1);
   text-decoration: none;
   display: block;
   text-transform: uppercase;
-  padding: 1.5rem;
+  padding: 1.5rem 3rem;
+  display: flex;
+  align-items: center;
 }
 .side-nav__icon {
   height: 1.75rem;
   width: 1.75rem;
+  margin-right: 2rem;
+  fill: currentColor;
 }
 
 .legal {
