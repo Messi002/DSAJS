@@ -124,7 +124,10 @@
 .side-nav{
     &__item{}
     &__link{}
-    &__icon{}
+    &__icon{
+        height: 1.75rem;
+        width: 1.75rem; 
+    }
 }
 
 ///////////////////////////
@@ -133,4 +136,5 @@
     font-size: 1.2rem;
     text-align: center;
     color: var(--color-grey-light-4);
+    padding: 2.5rem;
 }
