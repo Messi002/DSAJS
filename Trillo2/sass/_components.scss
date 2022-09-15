@@ -396,6 +396,7 @@
     box-shadow: var(--shadow-light);
     padding: 3rem;
     margin: 3rem;
+    position: relative;
 
     &__text{
         margin-bottom: 1.5rem;
@@ -437,6 +438,14 @@
     }
 
     &::before{
-        content: "/201C";
+        content: "\201C";
+        // display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 20rem;
+        line-height: 1rem;
+        color: var(--color-grey-light-2);
+        font-family: sans-serif;
     }
 }

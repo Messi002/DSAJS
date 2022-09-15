@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --color-primary: #eb2f64;
   --color-primary-light: #ff3366;
@@ -333,6 +334,7 @@ body {
   box-shadow: var(--shadow-light);
   padding: 3rem;
   margin: 3rem;
+  position: relative;
 }
 .review__text {
   margin-bottom: 1.5rem;
@@ -367,7 +369,14 @@ body {
   font-weight: 300;
 }
 .review::before {
-  content: "/201C";
+  content: "“";
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 20rem;
+  line-height: 1rem;
+  color: var(--color-grey-light-2);
+  font-family: sans-serif;
 }
 
 .container {
