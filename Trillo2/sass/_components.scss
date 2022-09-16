@@ -20,7 +20,7 @@
         color: inherit;
         padding: .7rem 2rem ;
         border-radius: 100px;
-        width: 90%;
+        width: 80%;
         transition: all .3s ease;
         margin-right: -3.25rem;
         &:focus{
@@ -460,8 +460,12 @@
         left: 0;
         font-size: 20rem;
         line-height: 1rem;
-        color: var(--color-grey-light-2);
+        color: var(--color-grey-light-3);
         font-family: sans-serif;
         z-index: 2;
     }
 }
+
+
+///////////////////////////
+//  RECOMMEND
