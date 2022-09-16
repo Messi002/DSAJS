@@ -36,7 +36,7 @@ min-height: 50rem;
 .detail{
  display: flex;
  align-items: center;
- padding: 0 4.5rem;
+ padding: 4.5rem;
  background-color: var(--color-grey-light-1);
  border-bottom: var(--line) ;
  font-size: 1.4rem;
@@ -57,4 +57,7 @@ height: fit-content;
 .user-reviews{
 
 flex: 1;
+display: flex;
+flex-direction: column;
+align-items: center;
 }

@@ -278,8 +278,17 @@
     cursor: pointer;
     transition: all .2s;
 
+    & span{
+        margin-left: 3px;
+        transition: margin-left .2s;
+    }
+
     &:hover{
         color: var(--color-grey-dark-1);
+
+        span{
+            margin-left: 8px;
+        }
     }
 
     &:focus{
@@ -397,10 +406,13 @@
     padding: 3rem;
     margin: 3rem;
     position: relative;
+    // z-index: 100;
+   
 
     &__text{
         margin-bottom: 1.5rem;
-        z-index: 190;
+        z-index: 10;
+        position: relative;
 
 
     }
@@ -450,6 +462,6 @@
         line-height: 1rem;
         color: var(--color-grey-light-2);
         font-family: sans-serif;
-        z-index: 1;
+        z-index: 2;
     }
 }
