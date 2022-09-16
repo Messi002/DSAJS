@@ -191,6 +191,7 @@
 
         @media only screen and (max-width:$bp-medium){
            justify-content: center;
+           padding: 2rem;
             }
 
 
@@ -406,7 +407,7 @@
     }
 
     &__friends{
-
+        display: flex;
     }
 
     &__photo{
@@ -434,6 +435,12 @@
     margin: 3rem;
     position: relative;
     // z-index: 100;
+
+
+    @media only screen and (max-width:$bp-medium){
+   padding: 2rem;
+   margin-bottom: 3rem;
+        }
    
 
     &__text{
@@ -499,6 +506,11 @@
 .cta{
     padding: 3.5rem 0;
     text-align: center;
+
+
+    @media only screen and (max-width:$bp-medium){
+         padding: 2.5rem 0;
+        }
 
     &__book-now{
         font-size: 1.5rem;
