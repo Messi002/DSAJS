@@ -55,6 +55,12 @@ min-height: 50rem;
     padding: 3rem;
     }
 
+
+    
+ @media only screen and (max-width:$bp-small){
+    flex-direction: column;
+    }
+
 }
 
 .description{
@@ -71,6 +77,11 @@ height: fit-content;
   padding: 2rem;
   margin-right: 3rem;
     }
+
+    @media only screen and (max-width:$bp-small){
+        margin-right: 0;
+        margin-bottom: 3rem;
+        }
 
 }
 

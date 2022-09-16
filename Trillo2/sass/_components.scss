@@ -194,6 +194,12 @@
            padding: 2rem;
             }
 
+            @media only screen and (max-width:$bp-small){
+                flex-direction: column;
+                padding: 1.5rem .5rem;
+               
+                }
+
 
     }
     &__link:hover{
@@ -205,6 +211,11 @@
         width: 1.75rem;  
         margin-right: 2rem;
         fill: currentColor;
+        @media only screen and (max-width:$bp-small){
+           margin-right: 0;
+           height: 1.5rem;
+           width: 1.5rem;
+            }
     }
 }
 
