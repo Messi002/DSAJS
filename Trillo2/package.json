@@ -29,7 +29,7 @@
     "compile:sass": "sass sass/main.scss CSS/style.comp.css",
     "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' CSS/style.comp.css -o CSS/style.prefix.css",
     "compress:css": "sass CSS/style.prefix.css CSS/style.css --output-style compressed",
-    "build:css": "npm-run-all compile:sass  prefix:css compress:css"
+    "build:css": " compile:sass  prefix:css compress:css"
   },
   "keywords": [],
   "author": "",
