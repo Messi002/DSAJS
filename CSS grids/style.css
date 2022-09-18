@@ -97,6 +97,12 @@ grid-column: 1 / 4;
     width: 1000px;
     margin: 30px auto;
     background-color: #ddd;
+    display: grid;
+    grid-template-rows: repeat(2, 150px);
+    grid-template-columns: repeat(2 , 1fr);
+    grid-gap: 30px;
+
+    grid-auto-rows: 100px;
 }
 
 .item{
