@@ -102,7 +102,8 @@ grid-column: 1 / 4;
     grid-template-columns: repeat(2 , 1fr);
     grid-gap: 30px;
 
-    grid-auto-rows: 100px;
+    grid-auto-rows: 80px;
+
 }
 
 .item{
@@ -111,4 +112,14 @@ grid-column: 1 / 4;
     font-family: sans-serif;
     font-size: 30px;
     background-color: teal;
+}
+.item--4{
+    grid-row: 2 / span 3 ;
+
+    background-color: crimson;
+}
+.item--7{
+    grid-row: 1 / span -1 ;
+
+    background-color: royalblue;
 }
