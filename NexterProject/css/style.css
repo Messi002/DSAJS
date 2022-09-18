@@ -18,10 +18,19 @@ body {
   line-height: 1.6;
 }
 
+.footer {
+  background-color: #c69963;
+  grid-column: full-start/full-end;
+}
+
 .container {
   display: grid;
   grid-template-rows: 80vh min-content 40vw repeat(3, auto);
   grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] 1fr [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] 1fr [full-end];
+}
+.container > * {
+  font-size: 3rem;
+  padding: 40px;
 }
 
 .sidebar {
@@ -52,6 +61,7 @@ body {
 
 .homes {
   background-color: #c69963;
+  grid-column: center-start/center-end;
 }
 
 .gallery {
@@ -61,6 +71,7 @@ body {
 
 .footer {
   background-color: #c69963;
+  grid-column: full-start/full-end;
 }
 
 /*# sourceMappingURL=style.css.map */
