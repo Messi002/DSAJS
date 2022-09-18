@@ -18,6 +18,11 @@ body {
   line-height: 1.6;
 }
 
+.container {
+  display: grid;
+  grid-template-rows: 80vh min-content 40vw auto repeat(2, min-content);
+}
+
 .sidebar {
   background-color: #c69963;
 }
