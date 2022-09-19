@@ -135,9 +135,9 @@ body {
 }
 
 .story__pictures {
-  background-color: #c69963;
   grid-column: full-start/col-end 4;
-  background-image: linear-gradient(rgba(198, 153, 99, 0.5), rgba(198, 153, 99, 0.5)) url(../img/mountains2.jpg);
+  background-image: linear-gradient(rgba(198, 153, 99, 0.5), rgba(198, 153, 99, 0.5)), url(../img/Man-reading-a-newspaper-e1440023119255.jpg);
+  background-size: cover;
   display: grid;
   grid-template-rows: repeat(6, 1fr);
   grid-template-columns: repeat(6, 1fr);

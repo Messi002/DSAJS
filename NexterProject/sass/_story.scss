@@ -1,8 +1,10 @@
 .story{
     &__pictures{
-        background-color: $color-primary;
+        // background-color: $color-primary;
         grid-column: full-start / col-end 4;
-        background-image: linear-gradient( rgba($color-primary, .5),       rgba($color-primary, .5) ) url(../img/mountains2.jpg);
+        background-image: linear-gradient( rgba($color-primary, .5), rgba($color-primary, .5) ), url(../img/Man-reading-a-newspaper-e1440023119255.jpg);
+        background-size: cover;
+        // background-repeat: no-repeat ;
 
 
         display: grid;
