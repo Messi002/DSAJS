@@ -201,6 +201,7 @@ body {
 }
 .home__name {
   grid-column: 1/-1;
+  grid-row: 1/2;
   width: 80%;
   justify-self: center;
   font-family: "Josefin Sans", sans-serif;
