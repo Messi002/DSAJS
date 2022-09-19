@@ -186,9 +186,30 @@ body {
 .home__img {
   width: 100%;
   grid-column: 1/-1;
+  grid-row: 1/2;
+  z-index: 1;
+}
+.home__like {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  fill: #c69963;
+  height: 2rem;
+  width: 2rem;
+  z-index: 3;
+  justify-self: end;
+  margin: 1rem;
 }
 .home__name {
   grid-column: 1/-1;
+  width: 80%;
+  justify-self: center;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.6rem;
+  text-align: center;
+  padding: 1.25rem;
+  background-color: #101d2c;
+  font-weight: 400;
+  color: #fff;
 }
 .home__location svg, .home__rooms svg, .home__area svg, .home__price svg {
   fill: #c69963;
