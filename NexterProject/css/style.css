@@ -137,6 +137,17 @@ body {
 .story__pictures {
   background-color: #c69963;
   grid-column: full-start/col-end 4;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+}
+.story__pictures__img--1 {
+  width: 100%;
+  grid-row: 2/6;
+  grid-column: 2/6;
+}
+.story__pictures__img--2 {
+  width: 100%;
 }
 .story__content {
   background-color: #f9f7f6;
