@@ -41,10 +41,12 @@ body {
 
 .header {
   background-color: #54483A;
+  grid-column: full-start/col-start 7;
 }
 
 .realtors {
   background-color: #101d2c;
+  grid-column: col-start 7/full-end;
 }
 
 .features {
