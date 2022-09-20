@@ -310,7 +310,7 @@ body {
 .footer {
   background-color: #101d2c;
   grid-column: full-start/full-end;
-  padding: 8rem;
+  padding: 2.5rem;
 }
 
 .nav {
@@ -331,8 +331,12 @@ body {
   display: block;
   transition: all 0.2s ease-in-out;
 }
-.nav__link:link__link:active, .nav__link:link__link:hover, .nav__link:visited__link:active, .nav__link:visited__link:hover {
+.nav__link:active, .nav__link:hover {
   background-color: rgba(255, 255, 255, 0.05);
+  transform: translateY(-0.2rem);
+}
+.nav__link:active {
+  transform: translateY(3px);
 }
 
 /*# sourceMappingURL=style.css.map */
