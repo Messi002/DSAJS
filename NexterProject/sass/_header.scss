@@ -25,7 +25,21 @@
     }
 
     &__seenon-text{
-        
+        display: grid;
+        grid-template-columns: 1fr max-content 1fr;
+        gap: 3rem;
+        align-items: center;
+
+        color: $color-grey-dark-2;
+        font-size: 1.6rem;
+
+        &::before,
+        &::after{
+            content: "";
+            height: 1px;
+            display: block;
+            background-color: currentColor;
+        }
     }
 
     &__seenon-logos{
