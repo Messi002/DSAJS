@@ -34,6 +34,12 @@ body {
   font-weight: 400;
 }
 
+.heading-1 {
+  font-size: 4.5rem;
+  line-height: 1;
+  color: #54483A;
+}
+
 .heading-2 {
   font-size: 4rem;
   font-style: italic;
