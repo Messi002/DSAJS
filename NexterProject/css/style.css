@@ -10,6 +10,11 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
 }
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 50%;
+  }
+}
 
 body {
   font-family: "Nunito", sans-serif;
@@ -27,6 +32,11 @@ body {
   display: grid;
   grid-template-rows: 80vh min-content 40vw repeat(3, auto);
   grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+}
+@media only screen and (max-width: 75em) {
+  .container {
+    font-size: 50%;
+  }
 }
 
 .heading-4, .heading-3, .heading-2, .heading-1 {
@@ -137,8 +147,8 @@ body {
   padding: 8rem;
   padding-top: 4rem;
   display: grid;
-  grid-template-rows: 1fr min-content 6rem 1fr;
-  grid-template-columns: max-content;
+  grid-template-rows: 1fr min-content minmax(6rem, min-content) 1fr;
+  grid-template-columns: minmax(min-content, max-content);
   row-gap: 1.5rem;
   justify-content: center;
 }
@@ -169,16 +179,41 @@ body {
   grid-template-columns: repeat(4, 1fr);
   gap: 3rem;
   justify-items: center;
+  align-items: center;
 }
 .header__seenon-logos img {
-  height: 2.5rem;
+  max-height: 2.5rem;
+  max-width: 100%;
   filter: brightness(70%);
 }
 
 .realtors {
   background-color: #101d2c;
   grid-column: col-start 7/full-end;
+  padding: 3rem;
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  row-gap: 2rem;
 }
+.realtors__list {
+  display: grid;
+  grid-template-columns: min-content max-content;
+  column-gap: 20px;
+  row-gap: 5vh;
+  align-items: center;
+}
+.realtors__img {
+  width: 4rem;
+  display: block;
+  border-radius: 40%;
+}
+.realtors__sold {
+  text-transform: uppercase;
+  color: #aaa;
+  margin-top: -3px;
+}
+
 .features {
   grid-column: center-start/center-end;
   margin: 15rem 0;

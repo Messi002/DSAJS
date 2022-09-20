@@ -14,6 +14,11 @@ $color-grey-dark-2: #6D5D4B;
 $font-primary: 'Nunito', sans-serif;
 $font-display: 'Josefin Sans', sans-serif; 
 
+//MEDIA QUERIES
+$bp-largest:75em; //1200px/16px
+$bp-large:62.5em; //100px
+
+
 *,
 *::after,
 *::before{
@@ -25,6 +30,10 @@ $font-display: 'Josefin Sans', sans-serif;
 html{
     box-sizing: border-box;
     font-size: 62.5%; //10pz/16px 62.5% 1rem = 10px
+    @media only screen and (max-width: $bp-largest){
+        font-size: 50%;
+    }
+    
 }
 
 body{
@@ -49,4 +58,9 @@ body{
                            [center-end]             minmax(6rem, 1fr)
                            [full-end];
 
+
+                           @media only screen and (max-width: $bp-largest){
+                            font-size: 50%;
+                        }
+                        
 }
