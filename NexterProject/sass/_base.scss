@@ -32,7 +32,9 @@ body{
     color:$color-grey-dark-2;
     font-weight: 300;
     line-height: 1.6;
-}.footer{
+
+}
+.footer{
     background-color: $color-primary;
     grid-column: full-start / full-end;
 
