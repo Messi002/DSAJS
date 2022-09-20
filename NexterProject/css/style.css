@@ -133,6 +133,9 @@ body {
   background-color: #54483A;
   grid-column: full-start/col-end 6;
 }
+.header__seenon-logos img {
+  height: 2.5rem;
+}
 
 .realtors {
   background-color: #101d2c;
